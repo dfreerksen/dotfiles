@@ -8,19 +8,19 @@ Everyone has their own setup for their dotfiles. Here is my setup.
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
 ```bash
-$ sh sync.sh
+sh sync.sh
 ```
 
 To install the scripts without first asking to overwrite files
 
 ```bash
-$ sh sync.sh --force
+sh sync.sh --force
 ```
 
 or
 
 ```bash
-$ sh sync.sh -f
+sh sync.sh -f
 ```
 
 # Git Configuration
