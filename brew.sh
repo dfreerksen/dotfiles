@@ -31,8 +31,8 @@ brew install git
 brew install vim --override-system-vi
 
 # NeoVim
-brew tap neovim/homebrew-neovim
-brew install neovim
+# brew tap neovim/homebrew-neovim
+# brew install neovim
 
 # PhantomJs
 brew install phantomjs
