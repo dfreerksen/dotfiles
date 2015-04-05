@@ -1,0 +1,52 @@
+# Use shell-style glob syntax
+syntax: glob
+
+# Bundler
+# Gemfile.lock
+
+# Ruby/Ruby on Rails
+pkg/
+*.sw[nop]
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/**/*
+
+# Capybara
+capybara-*.html
+
+# Simplecov
+coverage/
+
+# Rspec
+.rspec
+rspec.log
+
+# Jekyll
+/_site
+
+# SASS
+.sass-cache
+
+# Node
+/node_modules
+npm-debug.log
+
+# Bower
+/bower_components
+*.bowerrc
+
+# Python
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
