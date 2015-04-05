@@ -49,5 +49,8 @@ brew install the_silver_searcher
 # Imagemagick
 brew install imagemagick --with-webp
 
+# Go
+# brew install go
+
 # Remove outdated versions from the cellar
 brew cleanup
