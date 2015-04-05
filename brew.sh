@@ -27,6 +27,9 @@ brew install iojs
 # Git
 brew install git
 
+# rbenv
+brew install rbenv ruby-build
+
 # Vim
 brew install vim --override-system-vi
 
