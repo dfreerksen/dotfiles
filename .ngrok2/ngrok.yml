@@ -1,2 +1,10 @@
 # See https://ngrok.com/docs#tunnel-definitions
 #     https://ngrok.com/docs#config-options
+tunnels:
+  rails:
+    proto: http
+    addr: 3000
+
+  jekyll:
+    proto: http
+    addr: 4000

@@ -74,18 +74,34 @@ git config --global user.user "username"
 git config --global github.user "username"
 ```
 
-If you ever decide to run `sh bootstrap.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
+> If you ever decide to run `sh bootstrap.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
 
 
 ## ngrok
 
-Create a file at `~/.ngrok.local.yml'. Run the following command (you only have to do this once):
+Create a file at `~/.ngrok.local.yml'. Run the following command:
 
 ```bash
 ngrok service install -config ~/.ngrok.local.yml
 ```
 
+> You only have to do this once.
+
+If you don't want to create a config file, you can set an `authtoken`:
+
+```bash
+ngrok authtoken 1234567890abcdefghijklmnopqrstuvwxyzABCDEFG
+```
+
+> If you ever decide to run `sh bootstrap.sh` again, you will lose the `authtoken`. You will have to run the command again.
+
 To start a new service running on port `3000`:
+
+To start a new `rails` service:
+
+```bash
+ngrok start rails
+```
 
 ```bash
 ngrok http 3000
