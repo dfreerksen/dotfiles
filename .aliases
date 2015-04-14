@@ -64,6 +64,9 @@ alias reload='source ~/.bash_profile'
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
 
+# ngrok
+alias ngrok='~/bin/ngrok'
+
 # Ping
 alias ping='ping -c 20'
 

@@ -8,19 +8,19 @@ Everyone has their own setup for their dotfiles. Here is my setup.
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
 ```bash
-sh sync.sh
+sh bootstrap.sh
 ```
 
 To install the scripts without first asking to overwrite files
 
 ```bash
-sh sync.sh --force
+sh bootstrap.sh --force
 ```
 
 or
 
 ```bash
-sh sync.sh -f
+sh bootstrap.sh -f
 ```
 
 # Git Configuration
@@ -51,9 +51,9 @@ It is *not* a good idea to commit this file to any repository.
 ```
 
 
-## CLI
+## Git CLI
 
-If you know for a fact once you you run `sh sync.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
+If you know for a fact once you you run `sh bootstrap.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
 
 Set your name
 
@@ -74,7 +74,22 @@ git config --global user.user "username"
 git config --global github.user "username"
 ```
 
-If you ever decide to run `sh sync.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
+If you ever decide to run `sh bootstrap.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
+
+
+## ngrok
+
+Create a file at `~/.ngrok.local.yml'. Run the following command (you only have to do this once):
+
+```bash
+ngrok service install -config ~/.ngrok.local.yml
+```
+
+To start a new service running on port `3000`:
+
+```bash
+ngrok http 3000
+```
 
 
 ## Contributing
