@@ -5,6 +5,18 @@ Everyone has their own setup for their dotfiles. Here is my setup.
 
 ## Installation
 
+Install Vundle
+
+```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+```
+
+Install NERDTree
+
+```
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+```
+
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
 ```bash
