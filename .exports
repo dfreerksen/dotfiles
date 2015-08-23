@@ -22,6 +22,9 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="${yellow}"
 
+# Display prompty as `user: ~/current/directory $` (eg myuser: ~/path/to/current/dir $ )
+export PS1="\u: \w \\$ "
+
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X";
 
