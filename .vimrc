@@ -162,7 +162,6 @@
 
 " Plugins {
 
-
   " Misc {
     let b:match_ignorecase = 1
   " }
@@ -244,7 +243,6 @@
     let g:neocomplcache_force_overwrite_completefunc = 1
     let g:neocomplcache_snippets_dir='~/.vim/bundle/snipmate-snippets/snippets'
 
-
     " Plugin key-mappings.
     " Ctrl-k expands snippet & moves to next position
     " <CR> chooses highlighted value
@@ -252,7 +250,6 @@
     smap <C-k>     <Plug>(neocomplcache_snippets_expand)
     inoremap <expr><C-g>   neocomplcache#undo_completion()
     inoremap <expr><C-l>   neocomplcache#complete_common_string()
-    inoremap <expr><CR>    neocomplcache#complete_common_string()
 
     " <TAB>: completion.
     inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -270,7 +267,6 @@
 
     vmap <Left> <gv
     vmap <Right> >gv
-
 
     " Define keyword.
     if !exists('g:neocomplcache_keyword_patterns')
@@ -320,8 +316,7 @@
     map <Leader>l <plug>RunMostRecentSpec
 " }
 
-
- " Functions {
+" Functions {
 
 function! InitializeDirectories()
   let separator = "."
