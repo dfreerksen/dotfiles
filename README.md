@@ -1,21 +1,32 @@
-# Dotfiles
+# dfreerksen/dotfiles
 
-Everyone has their own setup for their dotfiles. Here is my setup.
+Everyone has their own setup for their dotfiles. Here is mine. Now with Neovim!
 
+## Requirements
+
+#### Homebrew
+
+Fresh install Neovim
+
+```
+brew tap neovim/homebrew-neovim
+brew install --HEAD neovim
+```
+
+If you’ve already installed Neovim
+
+```
+brew reinstall --HEAD neovim
+```
+
+#### tmux
+
+```
+brew uninstall tmux
+brew install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
+```
 
 ## Installation
-
-Install Vundle
-
-```
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-```
-
-Install NERDTree
-
-```
-git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
-```
 
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
@@ -35,9 +46,9 @@ or
 sh bootstrap.sh -f
 ```
 
-# Git Configuration
+## Git Configuration
 
-## .gitconfig.local
+#### .gitconfig.local
 
 ```bash
 touch ~/.gitconfig.local
@@ -62,8 +73,7 @@ It is *not* a good idea to commit this file to any repository.
   token = your_token
 ```
 
-
-## Git CLI
+#### Git CLI
 
 If you know for a fact once you you run `sh bootstrap.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
 
@@ -79,7 +89,7 @@ Set your email address
 git config --global user.email "me@example.com"
 ```
 
-Github user and token can be se using `user` or `github`
+Github user and token can be set using `user` or `github`
 
 ```bash
 git config --global user.user "username"
@@ -87,23 +97,6 @@ git config --global github.user "username"
 ```
 
 > If you ever decide to run `sh bootstrap.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
-
-
-## ngrok
-
-Set an `authtoken`:
-
-```bash
-ngrok authtoken 1234567890abcdefghijklmnopqrstuvwxyzABCDEFG
-```
-
-> If you ever decide to run `sh bootstrap.sh` again, you will lose the `authtoken`. You will have to run the command again.
-
-To start a new service running on port `3000`:
-```bash
-ngrok http 3000
-```
-
 
 ## Contributing
 

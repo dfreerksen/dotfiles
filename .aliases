@@ -14,7 +14,6 @@ alias .....="cd ../../../.."
 # Directory shortcuts
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
 
 # Edit files
 alias hosts="sudo $EDITOR /etc/hosts"
@@ -36,10 +35,14 @@ alias ls="command ls ${colorflag}"
 # Tail
 alias tlf="tail -f"
 
-alias mkdir='mkdir -p'
+# Make a directory (if it doesn't already exist)
+alias mkdir="mkdir -p"
 
-alias e='$EDITOR'
-alias v='$VISUAL'
+# Neovim as Vim
+alias vim='TERM=xterm-256color nvim'
+
+alias e="$EDITOR"
+alias v="$VISUAL"
 
 # Bundler
 alias b="bundle"
@@ -58,17 +61,14 @@ alias c="clear"
 alias h="history"
 
 # Reload shell
-alias reload='source ~/.bash_profile'
+alias reload="source ~/.bash_profile"
 # alias reload="exec $SHELL -l"
 
-# Pretty print the path
+# Pretty print $PATH
 alias path='echo $PATH | tr -s ":" "\n"'
 
-# ngrok
-alias ngrok='~/bin/ngrok'
-
 # Ping
-alias ping='ping -c 20'
+alias ping="ping -c 20"
 
 # Show/hide hidden files in Finder
 alias showall="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
@@ -79,7 +79,7 @@ alias spotoff="sudo mdutil -a -i off"
 alias spoton="sudo mdutil -a -i on"
 
 # Enable aliases to be sudo’ed
-alias sudo='sudo '
+alias sudo="sudo "
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
@@ -114,7 +114,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Recursively delete `.DS_Store` files
-alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+alias cleanup='find . -type f -name "*.DS_Store" -ls -delete'
 
 # URL-encode strings
 alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
@@ -128,9 +128,6 @@ alias map="xargs -n1"
 for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
-
-# Make Grunt print stack traces by default
-command -v grunt > /dev/null && alias grunt="grunt --stack"
 
 # Easily switch between `io.js` and `Node.js`
 alias use-iojs="brew unlink node && brew link --force iojs"
