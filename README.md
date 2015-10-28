@@ -4,6 +4,12 @@ Everyone has their own setup for their dotfiles. Here is mine. Now with Neovim!
 
 ## Requirements
 
+#### iTerm2 Nightly
+
+Currently requires [iTerm 2 nightly build](https://www.iterm2.com/) so it can use 24 bit colors.
+
+If you don't want to use the iTerm 2 nightly build, open `.aliases` and search for `alias vim`. The one that is commented out, that's the one you want for 256 color.
+
 #### Homebrew
 
 Fresh install Neovim
