@@ -8,6 +8,7 @@ scriptencoding utf-8
 set autoindent                 " Indent at the same level of the previous line
 set backspace=indent,eol,start " Backspace for dummies
 set backup                     " Backups are nice ...
+set clipboard=unnamed          " Allow pasting from clipboard
 set colorcolumn=80             " Show 80th column.
 set cursorline                 " Highlight current line
 set esckeys                    " Allow cursor keys in insert mode
