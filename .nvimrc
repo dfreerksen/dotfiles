@@ -56,6 +56,8 @@ call plug#begin('~/.nvim/bundle')
   Plug 'kana/vim-textobj-user'
   Plug 'kien/ctrlp.vim'
   Plug 'Lokaltog/vim-easymotion'
+  Plug 'terryma/vim-multiple-cursors'
+  Plug 'tpope/vim-dispatch'
   Plug 'tpope/vim-projectionist'
   Plug 'tpope/vim-surround'
 
