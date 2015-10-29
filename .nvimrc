@@ -1,4 +1,4 @@
-set nocompatible   " must be first line
+set nocompatible   " Must be first line
 
 let mapleader=','
 
@@ -44,7 +44,7 @@ set wildmenu                   " Show list instead of just completing
 set wildmode=list:longest,full " Command <Tab> completion, list matches, then longest common part, then all.
 
 if has('persistent_undo')
-  set undofile       "Persistent undo
+  set undofile       " Persistent undo
   set undolevels=500 " Maximum number of changes that can be undone
   set undoreload=500 " Maximum number lines to save for undo on a buffer reload
 endif
@@ -74,6 +74,7 @@ call plug#begin('~/.nvim/bundle')
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'chriskempson/base16-vim'
   Plug 'flazz/vim-colorschemes'
+  Plug 'ntpeters/vim-better-whitespace'
   Plug 'Raimondi/delimitMate'
   Plug 'tpope/vim-endwise'
 
@@ -264,6 +265,3 @@ colorscheme Tomorrow-Night
 let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 
 hi SpellBad  cterm=undercurl  gui=undercurl
-
-hi ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$\|\t/
