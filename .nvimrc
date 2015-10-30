@@ -249,8 +249,13 @@ let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 
+" Comment blocks from visual mode
 vnoremap # :s#^#\##<cr>
 vnoremap -# :s#^\###<cr>
+
+" Tab/Shift+Tab blocks in visual mode
+vnoremap <Tab> >
+vnoremap <S-Tab> <
 
 let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
                             \ --ignore .git
