@@ -244,7 +244,7 @@ call InitializeDirectories()
 
 map <C-e> :NERDTreeToggle<CR>:NERDTreeMirror<CR>
 
-let NERDTreeIgnore=['\.git$']
+let NERDTreeIgnore=['\.git$', '\.DS_Store']
 let NERDTreeQuitOnOpen=1
 let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
