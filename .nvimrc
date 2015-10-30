@@ -85,6 +85,7 @@ call plug#begin('~/.nvim/bundle')
   Plug 'hail2u/vim-css3-syntax'
 
   " Docker
+  Plug 'ekalinin/Dockerfile.vim'
 
   " Elixir
   Plug 'elixir-lang/vim-elixir'
