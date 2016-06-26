@@ -4,13 +4,11 @@ cd "$(dirname "${BASH_SOURCE}")";
 
 function doIt() {
   rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
-        --exclude "README.md" --exclude "HELP.md" --exclude "LICENSE" \
+        --exclude "MIT-LICENSE" --exclude "README.md" --exclude "TODO.md" \
         -avh --no-perms . ~;
 
   source ~/.bash_profile;
 }
-
-curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
   doIt;
@@ -24,4 +22,20 @@ fi;
 
 unset doIt;
 
+curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
+
+# Install Homebrew
+which -s brew
+if [[ $? != 0 ]] ; then
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+# Install NeoVim plugins
 vim +PlugInstall +qall
+
+# Sublime symlink
+ln -sf "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" ~/bin/subl
+
+echo "Done!"

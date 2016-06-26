@@ -1,6 +1,6 @@
 # dfreerksen/dotfiles
 
-Everyone has their own setup for their dotfiles. Here is mine. Now with Neovim!
+Everyone has their own setup for their dotfiles. Here is mine.
 
 ## Requirements
 
@@ -23,13 +23,6 @@ If you’ve already installed Neovim
 
 ```
 brew reinstall --HEAD neovim
-```
-
-#### tmux
-
-```
-brew uninstall tmux
-brew install https://raw.githubusercontent.com/choppsv1/homebrew-term24/master/tmux.rb
 ```
 
 ## Installation
