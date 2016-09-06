@@ -1,0 +1,9 @@
+--database=sqlite3
+--skip-action-cable
+--skip-bundle
+--skip-puma
+--skip-spring
+--skip-sprockets
+--skip-test
+--skip-test-unit
+--skip-turbolinks
