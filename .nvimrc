@@ -99,6 +99,7 @@ call plug#begin('~/.nvim/bundle')
 
   " Javascript
   Plug 'kchmck/vim-coffee-script'
+  Plug 'leafgarland/typescript-vim'
 
   " PHP
   Plug 'StanAngeloff/php.vim'
