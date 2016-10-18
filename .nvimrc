@@ -77,6 +77,7 @@ call plug#begin('~/.nvim/bundle')
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'Raimondi/delimitMate'
   Plug 'tpope/vim-endwise'
+  Plug 'editorconfig/editorconfig-vim'
 
   " Git
   Plug 'tpope/vim-fugitive'
