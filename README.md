@@ -1,48 +1,25 @@
 # dfreerksen/dotfiles
 
-Everyone has their own setup for their dotfiles. Here is mine.
-
-## Requirements
-
-#### iTerm2 Nightly
-
-Currently requires [iTerm 2 nightly build](https://www.iterm2.com/) so it can use 24 bit colors.
-
-If you don't want to use the iTerm 2 nightly build, open `.aliases` and search for `alias vim`. The one that is commented out, that's the one you want for 256 color.
-
-#### Homebrew
-
-Fresh install Neovim
-
-```
-brew tap neovim/homebrew-neovim
-brew install --HEAD neovim
-```
-
-If you’ve already installed Neovim
-
-```
-brew reinstall --HEAD neovim
-```
+dotfiles
 
 ## Installation
 
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
 ```bash
-sh bootstrap.sh
+sh setup.sh
 ```
 
 To install the scripts without first asking to overwrite files
 
 ```bash
-sh bootstrap.sh --force
+sh setup.sh --force
 ```
 
 or
 
 ```bash
-sh bootstrap.sh -f
+sh setup.sh -f
 ```
 
 ## Git Configuration
@@ -74,7 +51,7 @@ It is *not* a good idea to commit this file to any repository.
 
 #### Git CLI
 
-If you know for a fact once you you run `sh bootstrap.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
+If you know for a fact once you you run `sh setup.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
 
 Set your name
 
@@ -95,7 +72,7 @@ git config --global user.user "username"
 git config --global github.user "username"
 ```
 
-> If you ever decide to run `sh bootstrap.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
+> If you ever decide to run `sh setup.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
 
 ## Contributing
 
