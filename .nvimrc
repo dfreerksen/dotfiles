@@ -112,6 +112,7 @@ call plug#begin('~/.nvim/bundle')
   Plug 'tpope/vim-liquid'
   Plug 'tpope/vim-rake'
   Plug 'tpope/vim-rails'
+  Plug 'rainerborene/vim-reek'
 
   " tmux
   Plug 'christoomey/vim-tmux-runner'
@@ -150,6 +151,7 @@ vnoremap > >gv
 " Adjust viewports to the same size
 map <Leader>= <C-w>=
 
+" Rubocop
 let g:vimrubocop_config = '~/.rubocop.yml'
 
 let g:syntastic_ignore_files=['\.html$', '\c\.h$', '\.css$']
@@ -177,6 +179,10 @@ nmap <Leader>g <Plug>GrepOperatorOnCurrentDirectory
 vmap <Leader>g <Plug>GrepOperatorOnCurrentDirectory
 nmap <Leader><Leader>g <Plug>GrepOperatorWithFilenamePrompt
 vmap <Leader><Leader>g <Plug>GrepOperatorWithFilenamePrompt
+
+" Reek `:RunReek`
+let g:reek_always_show = 1
+let g:reek_line_limit = 1000
 
 " Fugitive
 nnoremap <silent> <leader>gs :Gstatus<CR>

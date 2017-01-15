@@ -24,10 +24,12 @@ fi;
 unset doIt;
 
 # Install latest of `plug.vim`
-curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install latest of Tomorrow Night VIM theme
-curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
+curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs \
+  https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
 
 # Install Homebrew
 which -s brew
