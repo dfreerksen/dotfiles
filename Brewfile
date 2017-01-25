@@ -52,6 +52,7 @@ brew 'libsass'
 # Development
 brew 'phantomjs'
 brew 'php-code-sniffer'
+brew 'php70-xdebug'
 brew 'redis'
 brew 'tmate'
 brew 'tmux'
