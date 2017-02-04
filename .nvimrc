@@ -22,7 +22,7 @@ set incsearch                  " Highlight search text as it is typed
 set laststatus=2               " Always show the status
 set linespace=0                " No extra spaces between rows
 set list                       " Displays whitespace
-set listchars=tab:``,trail:`,space:.,extends:#,nbsp:`
+set listchars=tab:``,trail:`,extends:#,nbsp:`
 set magic                      " Allows pattern matching with special characters
 set noerrorbells               " Disable error bells
 set nojoinspaces               " Do not join lines with a space

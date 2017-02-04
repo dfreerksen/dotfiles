@@ -9,17 +9,23 @@ AllCops:
     - "spec/dummy/**/*"
     - "vendor/**/*"
 
-LineLength:
+Metrics/BlockLength:
+  Exclude:
+    - '**/*.rake'
+    - 'config/routes.rb'
+    - 'spec/**/*.rb'
+
+Metrics/LineLength:
   Max: 80
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-DotPosition:
+Style/DotPosition:
   EnforcedStyle: leading
 
-StringLiterals:
+Style/StringLiterals:
   EnforcedStyle: double_quotes
 
-StringLiteralsInInterpolation:
+Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes

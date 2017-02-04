@@ -5,28 +5,33 @@ root = true
 
 [*]
 charset = utf-8
+end_of_line = lf
 indent_style = space
 indent_size = 2
-tab_width = 4
-end_of_line = lf
-insert_final_newline = true
+tab_width = 2
 trim_trailing_whitespace = true
+insert_final_newline = true
 
 [*.rb]
 max_line_length = 80
 
-[*.{erb,haml,coffee,less,scss,sass}]
-max_line_length = 120
-
-[*.{htm,html,js,css}]
-indent_style = tab
-indent_size = 4
-max_line_length = 120
-
 [*.php]
-indent_style = tab
 indent_size = 4
+tab_width = 4
 max_line_length = 120
 
-[*.{yml,md,json}]
+[*.{css,less,js,sass,scss}]
+indent_size = 4
+tab_width = 4
+max_line_length = 120
+
+[*.{coffee}]
+max_line_length = 120
+
+[*.{erb,html}]
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.{json,md,yml}]
 insert_final_newline = false

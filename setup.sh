@@ -43,9 +43,6 @@ brew update
 # Upgrade installed formulae
 brew upgrade
 
-# Install Homebrew formulae and Cask applications
-brew bundle
-
 # Install Homebrew formulae
 brew bundle --file=./Brewfile
 
@@ -54,7 +51,6 @@ brew bundle --file=./Caskfile
 
 # Cleanup
 brew cleanup
-brew cask cleanup
 
 # Doctor
 brew doctor

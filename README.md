@@ -30,8 +30,6 @@ sh setup.sh -f
 touch ~/.gitconfig.local
 ```
 
-It is *not* a good idea to commit this file to any repository.
-
 ```
 [user]
 
@@ -48,31 +46,6 @@ It is *not* a good idea to commit this file to any repository.
   user = your_username
   token = your_token
 ```
-
-#### Git CLI
-
-If you know for a fact once you you run `sh setup.sh` to set this up and you will *never* run it again. Maybe you don't need a `~/.gitconfig.local` file.
-
-Set your name
-
-```bash
-git config --global user.name "John Doe"
-```
-
-Set your email address
-
-```bash
-git config --global user.email "me@example.com"
-```
-
-Github user and token can be set using `user` or `github`
-
-```bash
-git config --global user.user "username"
-git config --global github.user "username"
-```
-
-> If you ever decide to run `sh setup.sh` again, you'll have to run these commands again. Otherwise, you need a `~/.gitconfig.local` file.
 
 ## Contributing
 
