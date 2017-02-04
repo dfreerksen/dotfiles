@@ -26,6 +26,7 @@ cask 'tower'
 # Cloud
 cask 'dropbox'
 cask 'google-drive'
+cask 'sync'
 cask 'wd-my-cloud'
 
 # Managers
