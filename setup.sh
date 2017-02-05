@@ -2,7 +2,11 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-function doIt() {
+function commandExists () {
+  command -v "${1}" >/dev/null 2>&1
+}
+
+function doIt () {
   rsync --exclude ".git/" --exclude ".DS_Store" --exclude "setup.sh" \
         --exclude "Brewfile" --exclude "Caskfile" --exclude "MIT-LICENSE" \
         --exclude "README.md" --exclude "TODO.md" \
@@ -23,17 +27,8 @@ fi;
 
 unset doIt;
 
-# Install latest of `plug.vim`
-curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install latest of Tomorrow Night VIM theme
-curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs \
-  https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
-
 # Install Homebrew
-which -s brew
-if [[ $? != 0 ]] ; then
+if ! commandExists brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
@@ -54,6 +49,14 @@ brew cleanup
 
 # Doctor
 brew doctor
+
+# Install latest of `plug.vim`
+curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install latest of Tomorrow Night VIM theme
+curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs \
+  https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
 
 # Install NeoVim plugins
 vim +PlugInstall +qall
