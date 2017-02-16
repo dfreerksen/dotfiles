@@ -59,6 +59,7 @@ cask 'medis'
 cask 'docker'
 cask 'kitematic'
 cask 'vagrant-manager'
+cask 'vagrant'
 cask 'virtualbox'
 
 # Fonts
@@ -67,8 +68,8 @@ cask 'font-inconsolata'
 
 # Privacy/Security
 cask 'cryptomator'
+cask 'oversight'
 cask 'tunnelbear'
-cask 'vagrant'
 cask 'viscosity'
 
 # Etc
