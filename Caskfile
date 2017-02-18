@@ -33,7 +33,6 @@ cask 'wd-my-cloud'
 cask 'cakebrew'
 
 # Communication
-cask 'screenhero'
 cask 'skype'
 
 # Text/Markdown Editors
@@ -50,6 +49,7 @@ cask 'torbrowser'
 cask 'mongotron'
 cask 'postgres'
 cask 'postico'
+cask 'querious'
 cask 'sequel-pro'
 
 # Cache
