@@ -46,6 +46,9 @@ alias ld="ls -lF ${colorflag}"
 # Tail
 alias tlf="tail -f"
 
+# Copy current path to clipboard
+alias copypath="pwd | pbcopy"
+
 # Make a directory (if it doesn't already exist)
 alias mkdir="mkdir -p"
 
