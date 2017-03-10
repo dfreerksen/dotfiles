@@ -19,7 +19,6 @@ cask 'paw'
 cask 'handbrake'
 cask 'spotify'
 cask 'transmission'
-cask 'vlc'
 
 # Productivity
 cask 'codekit'
