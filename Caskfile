@@ -6,7 +6,6 @@ tap 'buo/cask-upgrade'
 
 # Utilities
 cask 'alfred'
-cask 'appcleaner'
 cask 'batchmod'
 cask 'bettertouchtool'
 cask 'caffeine'
@@ -29,9 +28,6 @@ cask 'dropbox'
 cask 'google-drive'
 cask 'sync'
 cask 'wd-my-cloud'
-
-# Managers
-cask 'cakebrew'
 
 # Communication
 cask 'skype'
