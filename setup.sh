@@ -7,10 +7,7 @@ function commandExists () {
 }
 
 function doIt () {
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "setup.sh" \
-        --exclude "Brewfile" --exclude "Caskfile" --exclude "MIT-LICENSE" \
-        --exclude "README.md" --exclude "TODO.md" \
-        -avh --no-perms . ~;
+  rsync --exclude ".DS_Store" -avh --no-perms ./resources/ ~;
 
   source ~/.bash_profile;
 }
@@ -32,23 +29,11 @@ if ! commandExists brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-# Update Homebrew
-brew update
-
-# Upgrade installed formulae
-brew upgrade
-
 # Install Homebrew formulae
 brew bundle --file=./Brewfile
 
 # Install Cask applications
 brew bundle --file=./Caskfile
-
-# Cleanup
-brew cleanup
-
-# Doctor
-brew doctor
 
 # Install latest of `plug.vim`
 curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \

@@ -1,75 +1,79 @@
 # Tap
-tap 'caskroom/cask'
-tap 'caskroom/versions'
-tap 'caskroom/fonts'
-tap 'buo/cask-upgrade'
+tap "caskroom/cask"
+tap "caskroom/versions"
+tap "caskroom/fonts"
+tap "buo/cask-upgrade"
 
 # Utilities
-cask 'alfred'
-cask 'batchmod'
-cask 'bettertouchtool'
-cask 'caffeine'
-cask 'cleanmymac'
-cask 'iterm2'
-cask 'java'
-cask 'paw'
+cask "alfred"
+cask "bettertouchtool"
+cask "caffeine"
+cask "cleanmymac"
+cask "etcher"
+cask "insomnia"
+cask "iterm2"
+cask "java"
+cask "paw"
+cask "phonegap"
 
 # Entertainment
-cask 'handbrake'
-cask 'spotify'
-cask 'transmission'
+cask "handbrake"
+cask "spotify"
+cask "transmission"
 
 # Productivity
-cask 'codekit'
-cask 'tower'
+cask "codekit"
+cask "github-desktop"
+cask "githubpulse"
+cask "tower"
 
 # Cloud
-cask 'dropbox'
-cask 'google-drive'
-cask 'sync'
-cask 'wd-my-cloud'
+cask "dropbox"
+cask "google-drive"
+cask "owncloud"
+cask "sync"
+cask "wd-my-cloud"
 
 # Communication
-cask 'skype'
+cask "screenhero"
+cask "skype"
 
 # Text/Markdown Editors
-cask 'atom'
-cask 'sublime-text'
+cask "atom"
+cask "macdown"
+cask "sublime-text"
 
 # Browsers
-cask 'brave'
-cask 'firefox'
-cask 'google-chrome'
-cask 'torbrowser'
+cask "brave"
+cask "firefox"
+cask "google-chrome"
+cask "torbrowser"
 
 # Database
-cask 'mongotron'
-cask 'postgres'
-cask 'postico'
-cask 'querious'
-cask 'sequel-pro'
+cask "mongotron"
+cask "postgres"
+cask "postico"
+cask "querious"
+cask "sequel-pro"
 
 # Cache
-cask 'medis'
+cask "medis"
 
 # Virtualization
-cask 'docker'
-cask 'kitematic'
-cask 'vagrant-manager'
-cask 'vagrant'
-cask 'virtualbox'
+cask "docker"
+cask "kitematic"
+cask "vagrant-manager"
+cask "vagrant"
+cask "virtualbox"
 
 # Fonts
-cask 'font-hack'
-cask 'font-inconsolata'
+cask "font-hack"
+cask "font-inconsolata"
 
 # Privacy/Security
-cask 'cryptomator'
-cask 'oversight'
-cask 'tunnelbear'
-cask 'viscosity'
+cask "cryptomator"
+cask "tunnelbear"
+cask "viscosity"
 
-# Etc
-cask 'sketchup'
-cask 'poedit'
-cask 'moeditor'
+# Misc
+cask "poedit"

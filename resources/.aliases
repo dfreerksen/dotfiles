@@ -28,9 +28,6 @@ alias .....="cd ../../../.."
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 
-# Edit files
-alias hosts="sudo $EDITOR /etc/hosts"
-
 # Color output for `ls`
 alias ls="command ls ${colorflag}"
 
@@ -47,7 +44,7 @@ alias ld="ls -lF ${colorflag}"
 alias tlf="tail -f"
 
 # Copy current path to clipboard
-alias copypath="pwd | pbcopy"
+alias copypwd="pwd | pbcopy"
 
 # Make a directory (if it doesn't already exist)
 alias mkdir="mkdir -p"
@@ -55,13 +52,12 @@ alias mkdir="mkdir -p"
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
+alias bi="bundle install"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias m="migrate"
 alias rk="rake"
-
-
 
 # Reload shell
 alias reload="source ~/.bash_profile"
@@ -112,8 +108,13 @@ for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
   alias "$method"="lwp-request -m '$method'"
 done
 
-# Get OS X Software Updates, Homebrew, NPM, and their installed packages
-alias sysup="softwareupdate -i -a; brew update; brew upgrade; brew cu; brew cleanup; npm install npm -g; npm update -g;"
+# Get OS X Software Updates, Homebrew, Cask and NPM
+alias appup="softwareupdate -i -a;"
+alias brewup="brew -v; brew update; brew upgrade; brew cleanup; brew doctor; brew -v"
+alias caskup="brew cask --version; brew cu --all; brew cask --version"
+alias npmup="npm -v; npm iinstall -g npm; npm update -g; npm outdated -g --depth=0; npm -gp outdated | cut -d: -f4 | xargs -n1 npm -g install; npm -v"
+
+alias sysup="appup; brewup; caskup; npmup;"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local

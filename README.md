@@ -47,6 +47,13 @@ touch ~/.gitconfig.local
   token = your_token
 ```
 
+## SSH
+
+```
+$ ssh-keygen -t rsa
+$ ssh-add ~/.ssh/id_rsa
+```
+
 ## Contributing
 
 1. Fork it ( https://github.com/dfreerksen/dotfiles/fork )
