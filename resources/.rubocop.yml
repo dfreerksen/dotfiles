@@ -9,6 +9,9 @@ AllCops:
     - "spec/dummy/**/*"
     - "vendor/**/*"
 
+Layout/DotPosition:
+  EnforcedStyle: leading
+
 Metrics/BlockLength:
   Exclude:
     - '**/*.rake'
@@ -20,9 +23,6 @@ Metrics/LineLength:
 
 Style/Documentation:
   Enabled: false
-
-Style/DotPosition:
-  EnforcedStyle: leading
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
