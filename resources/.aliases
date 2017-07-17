@@ -112,7 +112,7 @@ done
 alias appup="softwareupdate -i -a;"
 alias brewup="brew -v; brew update; brew upgrade; brew cleanup; brew doctor; brew -v"
 alias caskup="brew cask --version; brew cu --all; brew cask --version"
-alias npmup="npm -v; npm iinstall -g npm; npm update -g; npm outdated -g --depth=0; npm -gp outdated | cut -d: -f4 | xargs -n1 npm -g install; npm -v"
+alias npmup="npm -v; npm install -g npm; npm update -g; npm outdated -g --depth=0; npm -gp outdated | cut -d: -f4 | xargs -n1 npm -g install; npm -v"
 
 alias sysup="appup; brewup; caskup; npmup;"
 
