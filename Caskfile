@@ -23,8 +23,8 @@ cask "transmission"
 
 # Productivity
 cask "codekit"
+cask "fork"
 cask "github-desktop"
-cask "githubpulse"
 cask "tower"
 
 # Cloud
