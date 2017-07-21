@@ -24,6 +24,7 @@ cask "transmission"
 # Productivity
 cask "codekit"
 cask "fork"
+cask "forklift"
 cask "github-desktop"
 cask "tower"
 
