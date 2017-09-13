@@ -5,11 +5,9 @@ export PATH="$HOME/bin:$PATH";
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Make Sublime Text the default editor
-# export EDITOR="subl -w"
-
 # Make Vim the default editor
 export EDITOR="vim"
+export VISUAL="vim"
 
 # Prefer US English and use UTF-8
 export LANG="en_US.UTF-8"
@@ -22,9 +20,6 @@ export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:do=01;35:bd=40
 
 # Highlight section titles in manual pages
 export LESS_TERMCAP_md="${yellow}"
-
-# Display prompt as `user: ~/current/directory $` (eg myuser: ~/path/to/current/dir $ )
-# export PS1="\u: \w \\$ "
 
 # Display prompt as `user: ~/current/directory $` (eg myuser: ~/path/to/current/dir (branch_name)$ )
 export PS1="\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\] \[\e[0;32m\]\$(parse_git_branch)\[\e[0m\]\$ "

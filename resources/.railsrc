@@ -1,5 +1,3 @@
 --database=sqlite3
 --skip-action-cable
 --skip-bundle
---skip-test
---skip-test-unit

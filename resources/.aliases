@@ -5,6 +5,9 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
+# Enable aliases to be sudo’ed
+alias sudo="sudo "
+
 # Shell helpers
 alias c="clear"
 alias h="history"
@@ -14,9 +17,6 @@ alias v="$VISUAL"
 
 # Neovim as Vim
 alias vim='NVIM_TUI_ENABLE_TRUE_COLOR=1 nvim'
-
-# Enable aliases to be sudo’ed
-alias sudo="sudo "
 
 # Navigation
 alias ..="cd .."
@@ -40,11 +40,8 @@ alias ll="ls -laF ${colorflag}"
 # List only directories
 alias ld="ls -lF ${colorflag}"
 
-# Tail
-alias tlf="tail -f"
-
 # Copy current path to clipboard
-alias copypwd="pwd | pbcopy"
+alias cpwd="pwd | tr -d '[:space:]' | pbcopy"
 
 # Make a directory (if it doesn't already exist)
 alias mkdir="mkdir -p"
@@ -53,11 +50,6 @@ alias mkdir="mkdir -p"
 alias b="bundle"
 alias be="bundle exec"
 alias bi="bundle install"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias m="migrate"
-alias rk="rake"
 
 # Reload shell
 alias reload="source ~/.bash_profile"
@@ -80,23 +72,8 @@ alias spoton="sudo mdutil -a -i on"
 alias ip="curl ipecho.net/plain ; echo"
 alias localip="ipconfig getifaddr en0"
 
-# Flush Directory Service cache
-alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
-
 # Clean up LaunchServices to remove duplicates in the “Open With” menu
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
-# Recursively delete `.DS_Store` files
-alias dscleanup="find . -type f -name '*.DS_Store' -ls -delete"
-
-# View HTTP traffic
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
-# Canonical hex dump; some systems have this symlinked
-command -v hd > /dev/null || alias hd="hexdump -C"
-
-# URL-encode strings
-alias urlencode='python -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1]);"'
 
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
@@ -111,8 +88,8 @@ done
 # Get OS X Software Updates, Homebrew, Cask and NPM
 alias appup="softwareupdate -i -a;"
 alias brewup="brew -v; brew update; brew upgrade; brew cleanup; brew doctor; brew -v"
-alias caskup="brew cask --version; brew cu --all; brew cask --version"
-alias npmup="npm -v; npm install -g npm; npm update -g; npm outdated -g --depth=0; npm -gp outdated | cut -d: -f4 | xargs -n1 npm -g install; npm -v"
+alias caskup="brew cask --version; brew cu --all; brew cask cleanup; brew cask --version"
+alias npmup="npm -v; npm install -g npm; npm outdated -g; npm update -g; npm -v;"
 
 alias sysup="appup; brewup; caskup; npmup;"
 

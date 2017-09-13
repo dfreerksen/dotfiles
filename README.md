@@ -7,19 +7,19 @@ dotfiles
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
 
 ```bash
-sh setup.sh
+$ sh setup.sh
 ```
 
 To install the scripts without first asking to overwrite files
 
 ```bash
-sh setup.sh --force
+$ sh setup.sh --force
 ```
 
 or
 
 ```bash
-sh setup.sh -f
+$ sh setup.sh -f
 ```
 
 ## Git Configuration
@@ -27,7 +27,7 @@ sh setup.sh -f
 #### .gitconfig.local
 
 ```bash
-touch ~/.gitconfig.local
+$ touch ~/.gitconfig.local
 ```
 
 ```

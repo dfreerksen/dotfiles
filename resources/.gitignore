@@ -2,14 +2,5 @@
 .Trashes
 Desktop.ini
 Thumbs.db
-
-# Ruby
-.yardoc/
-brakeman.html
-coverage/
-doc/
 log/*.log
-rails_best_practices_output.html
-rspec.log
-spec/examples.txt
 tmp/
