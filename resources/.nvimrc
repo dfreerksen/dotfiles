@@ -273,8 +273,12 @@ let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
                             \ --ignore .DS_Store
                             \ -g ""'
 
-" let base16colorspace=256
-colorscheme Tomorrow-Night
+" set background=dark
+colorscheme spacegray
+
+" Theme options
+let g:spacegray_underline_search = 1
+let g:spacegray_italicize_comments = 1
 
 let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 
