@@ -1,28 +1,12 @@
 AllCops:
-  Include:
-    - Rakefile
-    - config.ru
   Exclude:
-    - "bin/**/*"
-    - "db/schema.rb"
-    - "db/migrate/**/*"
     - "spec/dummy/**/*"
-    - "vendor/**/*"
 
 Layout/DotPosition:
   EnforcedStyle: leading
 
-Metrics/BlockLength:
-  Exclude:
-    - '**/*.rake'
-    - 'config/routes.rb'
-    - 'spec/**/*.rb'
-
 Metrics/LineLength:
   Max: 80
-
-Style/Documentation:
-  Enabled: false
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
