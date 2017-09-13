@@ -40,12 +40,9 @@ curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install latest of Tomorrow Night VIM theme
+# https://github.com/ChrisKempson/Tomorrow-Theme
 curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs \
   https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
-
-# Install latest of Spacegray.vim theme
-curl -fLo ~/.nvim/colors/spacegray.vim --create-dirs \
-  https://raw.githubusercontent.com/ajh17/Spacegray.vim/master/colors/spacegray.vim
 
 # Install NeoVim plugins
 vim +PlugInstall +qall
