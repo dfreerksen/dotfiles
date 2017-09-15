@@ -36,6 +36,7 @@ cask "skype"
 
 # Text/Markdown Editors
 cask "atom"
+cask "boostnote"
 cask "macdown"
 cask "sublime-text"
 
