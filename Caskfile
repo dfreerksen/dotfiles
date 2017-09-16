@@ -52,6 +52,7 @@ cask "postgres"
 cask "postico"
 cask "querious"
 cask "sequel-pro"
+cask "tableplus"
 
 # Cache
 cask "medis"
