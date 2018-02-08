@@ -72,9 +72,6 @@ alias spoton="sudo mdutil -a -i on"
 alias ip="curl ipecho.net/plain ; echo"
 alias localip="ipconfig getifaddr en0"
 
-# Clean up LaunchServices to remove duplicates in the “Open With” menu
-alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
-
 # Intuitive map function
 # For example, to list all directories that contain a certain file:
 # find . -name .gitattributes | map dirname
@@ -89,9 +86,9 @@ done
 alias appup="softwareupdate -i -a;"
 alias brewup="brew -v; brew update; brew upgrade; brew cleanup; brew doctor; brew -v"
 alias caskup="brew cask --version; brew cu --all; brew cask cleanup; brew cask --version"
-alias npmup="npm -v; npm install -g npm; npm outdated -g; npm update -g; npm -v;"
+alias npmup="npm -v; npm install -g npm; npm outdated -g; npm update -g; npm -v"
 
-alias sysup="appup; brewup; caskup; npmup;"
+alias sysup="appup; brewup; caskup; npmup"
 
 # Include custom aliases
 [[ -f ~/.aliases.local ]] && source ~/.aliases.local
