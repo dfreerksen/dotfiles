@@ -1,14 +1,17 @@
 # Utilities
 cask "alfred"
 cask "bettertouchtool"
+cask "blockstack"
 cask "caffeine"
 cask "cleanmymac"
 cask "etcher"
 cask "insomnia"
 cask "iterm2"
 cask "java"
+cask "ngrok"
 cask "paw"
 cask "phonegap"
+cask "the-unarchiver"
 cask "zeplin"
 
 # Entertainment
@@ -25,7 +28,7 @@ cask "tower"
 
 # Cloud
 cask "dropbox"
-cask "google-drive"
+cask "google-backup-and-sync"
 cask "owncloud"
 cask "sync"
 cask "wd-my-cloud"
@@ -47,12 +50,10 @@ cask "google-chrome"
 cask "torbrowser"
 
 # Database
-cask "mongotron"
 cask "postgres"
 cask "postico"
 cask "querious"
 cask "sequel-pro"
-cask "tableplus"
 
 # Cache
 cask "medis"
@@ -68,6 +69,7 @@ cask "virtualbox-extension-pack"
 # Fonts
 cask "font-hack"
 cask "font-inconsolata"
+cask "font-input"
 
 # Privacy/Security
 cask "cryptomator"

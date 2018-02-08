@@ -54,6 +54,12 @@ $ ssh-keygen -t rsa
 $ ssh-add ~/.ssh/id_rsa
 ```
 
+## ngrok
+
+```
+$ ngrok http 3000
+```
+
 ## Contributing
 
 1.  Fork it ([https://github.com/dfreerksen/dotfiles/fork](https://github.com/dfreerksen/dotfiles/fork))
