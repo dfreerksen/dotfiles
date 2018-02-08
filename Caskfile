@@ -8,14 +8,13 @@ cask "etcher"
 cask "insomnia"
 cask "iterm2"
 cask "java"
+cask "lepton"
 cask "ngrok"
 cask "paw"
-cask "phonegap"
 cask "the-unarchiver"
 cask "zeplin"
 
 # Entertainment
-cask "handbrake"
 cask "spotify"
 cask "transmission"
 
@@ -34,7 +33,6 @@ cask "sync"
 cask "wd-my-cloud"
 
 # Communication
-cask "screenhero"
 cask "skype"
 
 # Text/Markdown Editors
@@ -60,6 +58,7 @@ cask "medis"
 
 # Virtualization
 cask "docker"
+cask "jet"
 cask "kitematic"
 cask "vagrant-manager"
 cask "vagrant"
