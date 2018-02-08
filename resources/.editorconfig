@@ -12,15 +12,15 @@ insert_final_newline = true
 tab_width = 2
 trim_trailing_whitespace = true
 
-[*.{css,coffee,js,less,php,scss,sass}]
+[*.{css,coffee,html|js,less,php,scss,sass}]
 max_line_length = 120
 
-[*.rb]
+[*.{md|rb}]
 max_line_length = 80
 
-[*.{css,less,php,scss,sass}]
+[*.{erb|html,php}]
 indent_size = 4
 tab_width = 4
 
-[*.{json,md,yml}]
+[*.{json,yml}]
 insert_final_newline = false
