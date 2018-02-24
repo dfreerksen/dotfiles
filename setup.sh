@@ -29,11 +29,30 @@ if ! commandExists brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+unset commandExists;
+
 # Install Homebrew formulae
 brew bundle --file=./Brewfile
 
 # Install Cask applications
 brew bundle --file=./Caskfile
+
+# APM packages for Atom
+apmPackages=( angularjs atom-beautify busy-signal editorconfig language-haml
+              linter linter-csslint linter-haml linter-htmlhint linter-jshint
+              linter-php linter-phpcs linter-rubocop linter-scss-lint
+              linter-ui-default minimap pigments rails-rspec svg-preview
+              teletype yard )
+
+for i in "${apmPackages[@]}"
+do
+  if [ ! -d "$HOME/.atom/packages/$i" ]
+  then
+    apm install $i
+  else
+    echo "Atom package $i already installed.";
+  fi
+done
 
 # Install latest of `plug.vim`
 curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
