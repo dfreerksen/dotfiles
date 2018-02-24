@@ -20,7 +20,6 @@ brew "libgcrypt"
 brew "libssh"
 brew "libssh2"
 brew "moreutils"
-brew "srcclr"
 brew "wget"
 
 # Vim
