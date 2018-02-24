@@ -1,8 +1,8 @@
 # Tap
 tap "homebrew/versions"
 tap "caskroom/cask"
+tap "caskroom/drivers"
 tap "caskroom/fonts"
-tap "caskroom/versions"
 tap "buo/cask-upgrade"
 
 # Services
