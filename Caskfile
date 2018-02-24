@@ -54,9 +54,7 @@ cask "postgres"
 cask "postico"
 cask "querious"
 cask "sequel-pro"
-
-# Cache
-cask "medis"
+cask "sqlpro-for-sqlite"
 
 # Virtualization
 cask "docker"
