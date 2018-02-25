@@ -4,6 +4,7 @@ tap "caskroom/cask"
 tap "caskroom/drivers"
 tap "caskroom/fonts"
 tap "buo/cask-upgrade"
+tap "neovim/neovim"
 
 # Services
 brew "automake"

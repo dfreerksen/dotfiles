@@ -55,12 +55,12 @@ do
 done
 
 # Install latest of `plug.vim`
-curl -fLo ~/.nvim/autoload/plug.vim --create-dirs \
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
   https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install latest of Tomorrow Night VIM theme
 # https://github.com/ChrisKempson/Tomorrow-Theme
-curl -fLo ~/.nvim/colors/Tomorrow-Night.vim --create-dirs \
+curl -fLo ~/.config/nvim/colors/Tomorrow-Night.vim --create-dirs \
   https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
 
 # Install NeoVim plugins
