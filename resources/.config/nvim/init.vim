@@ -1,55 +1,60 @@
-set nocompatible
+set nocompatible   " Must be first line
+
+let mapleader=','
 
 set encoding=utf-8
+scriptencoding utf-8
 
-set autoindent
-set backspace=indent,eol,start
-set backup
-set clipboard=unnamed
-set colorcolumn=80
-set cursorline
-set expandtab
-set gdefault
-set hidden
-set history=100
-set hlsearch
-set ignorecase
-set incsearch
-set laststatus=2
-set linespace=0
-set list
-set magic
-set noerrorbells
-set nojoinspaces
-set nowrap
-set number
-set relativenumber
-set scrolljump=5
-set scrolloff=3
-set shiftwidth=2
-set showmatch
-set showmode
-set smartcase
-set spell spelllang=en_us
-set tabstop=2
-set textwidth=0
-set softtabstop=2
-set wildmenu
-set wildmode=list:longest,full
+set autoindent                 " Indent at the same level of the previous line
+set backspace=indent,eol,start " Backspace for dummies
+set backup                     " Backups are nice ...
+set clipboard=unnamed          " Allow pasting from clipboard
+set colorcolumn=80             " Show 80th column.
+set cursorline                 " Highlight current line
+set expandtab                  " Tabs are spaces, not tabs
+set gdefault                   " Global search by default
+set hidden                     " Allow leaving modified buffers
+set history=100                " Store lotsof history (default is 20)
+set hlsearch                   " Highlight search terms
+set ignorecase                 " Case insensitive search by default
+set incsearch                  " Highlight search text as it is typed
+set laststatus=2               " Always show the status
+set linespace=0                " No extra spaces between rows
+set list                       " Displays whitespace
+set listchars=tab:``,trail:`,extends:#,nbsp:`
+set magic                      " Allows pattern matching with special characters
+set noerrorbells               " Disable error bells
+set nojoinspaces               " Do not join lines with a space
+set nowrap                     " No wraping long lines
+set number                     " Line numbers
+set relativenumber             " Relative line numbers
+set scrolljump=5               " Lines to scroll when cursor leaves screen
+set scrolloff=3                " Minimum lines to keep above and below cursor
+set shiftwidth=2               " Use indents of 2 spaces
+set showmatch                  " Highlight the matching bracket or brace
+set showmode                   " Display the current mode
+set smartcase                  " Case sensitive when uc present
+set spell spelllang=en_us      " Spell checking
+set tabstop=2                  " Indentation every 2 columns
+set textwidth=0                " No linewrapping
+set softtabstop=2              " Let backspace delete indent
+set whichwrap=b,s,h,l,<,>,[,]  " Backspace and cursor keys wrap to
+set wildmenu                   " Show list instead of just completing
+set wildmode=list:longest,full " Command <Tab> completion, list matches, then longest common part, then all.
 
-" auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall
+if has('persistent_undo')
+  set undofile       " Persistent undo
+  set undolevels=500 " Maximum number of changes that can be undone
+  set undoreload=500 " Maximum number lines to save for undo on a buffer reload
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+  Plug 'junegunn/vim-plug'
   Plug 'junegunn/vader.vim'
 
+  " Functionality
   Plug 'FelikZ/ctrlp-py-matcher'
   Plug 'inside/vim-grep-operator'
-  Plug 'junegunn/vim-plug'
   Plug 'kana/vim-textobj-user'
   Plug 'kien/ctrlp.vim'
   Plug 'Lokaltog/vim-easymotion'
@@ -58,6 +63,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-projectionist'
   Plug 'tpope/vim-surround'
 
+  " UI
   Plug 'airblade/vim-gitgutter'
   Plug 'bling/vim-airline'
   Plug 'rking/ag.vim'
@@ -65,6 +71,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/syntastic'
 
+  " General
   Plug 'AndrewRadev/splitjoin.vim'
   Plug 'chriskempson/base16-vim'
   Plug 'flazz/vim-colorschemes'
@@ -73,23 +80,32 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'editorconfig/editorconfig-vim'
 
+  " Git
   Plug 'tpope/vim-fugitive'
 
+  " CSS
   Plug 'hail2u/vim-css3-syntax'
 
+  " Docker
   Plug 'ekalinin/Dockerfile.vim'
 
+  " Elixir
   Plug 'elixir-lang/vim-elixir'
 
+  " Go
   Plug 'fatih/vim-go'
 
+  " HTML
   Plug 'mattn/emmet-vim'
 
+  " Javascript
   Plug 'kchmck/vim-coffee-script'
   Plug 'leafgarland/typescript-vim'
 
+  " PHP
   Plug 'StanAngeloff/php.vim'
 
+  " Ruby
   Plug 'gabebw/vim-spec-runner'
   Plug 'nelstrom/vim-textobj-rubyblock'
   Plug 'ngmy/vim-rubocop'
@@ -99,6 +115,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-rails'
   Plug 'rainerborene/vim-reek'
 
+  " tmux
   Plug 'christoomey/vim-tmux-runner'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'edkolev/tmuxline.vim'
@@ -262,4 +279,4 @@ colorscheme Tomorrow-Night
 
 let g:spellfile_URL = 'http://ftp.vim.org/vim/runtime/spell'
 
-hi SpellBad  cterm=undercurl  gui=undercurl
+hi SpellBad cterm=undercurl gui=undercurl
