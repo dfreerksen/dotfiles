@@ -2,10 +2,6 @@
 
 cd "$(dirname "${BASH_SOURCE}")";
 
-function commandExists () {
-  command -v "${1}" >/dev/null 2>&1
-}
-
 function doIt () {
   rsync --exclude ".DS_Store" -avh --no-perms ./resources/ ~;
 
@@ -24,6 +20,10 @@ fi;
 
 unset doIt;
 
+function commandExists () {
+  command -v "${1}" >/dev/null 2>&1
+}
+
 # Install Homebrew
 if ! commandExists brew; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -31,7 +31,7 @@ fi
 
 unset commandExists;
 
-# Install Homebrew formulae
+# Install Homebrew formulas
 brew bundle --file=./Brewfile
 
 # Install Cask applications
