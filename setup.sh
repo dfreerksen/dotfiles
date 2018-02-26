@@ -37,11 +37,14 @@ brew bundle --file=./Brewfile
 # Install Cask applications
 brew bundle --file=./Caskfile
 
-# APM packages for Atom
-apmPackages=( angularjs atom-beautify busy-signal editorconfig language-haml
-              linter linter-csslint linter-haml linter-htmlhint linter-jshint
-              linter-php linter-phpcs linter-rubocop linter-scss-lint
-              linter-ui-default minimap pigments rails-rspec svg-preview
+# APM themes and packages for Atom
+apmPackages=( one-dark-ui
+              angularjs atom-beautify busy-signal editorconfig intentions
+              language-haml linter linter-csslint linter-erb linter-eslint
+              linter-haml linter-htmlhint linter-js-standard linter-jshint
+              linter-php linter-phpcs linter-reek linter-rubocop
+              linter-scss-lint linter-ui-default minimap pigments
+              rails-i18n-autocomplete rails-rspec svg-preview
               teletype yard )
 
 for i in "${apmPackages[@]}"
@@ -56,12 +59,12 @@ done
 
 # Install latest of `plug.vim`
 curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Install latest of Tomorrow Night VIM theme
 # https://github.com/ChrisKempson/Tomorrow-Theme
 curl -fLo ~/.config/nvim/colors/Tomorrow-Night.vim --create-dirs \
-  https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
+     https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
 
 # Install NeoVim plugins
 vim +PlugInstall +qall

@@ -50,7 +50,7 @@ endif
 
 call plug#begin('~/.config/nvim/plugged')
   Plug 'junegunn/vim-plug'
-  Plug 'junegunn/vader.vim'
+  Plug 'junegunn/vader.vim',  { 'on': 'Vader', 'for': 'vader' }
 
   " Functionality
   Plug 'FelikZ/ctrlp-py-matcher'
@@ -67,7 +67,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'bling/vim-airline'
   Plug 'rking/ag.vim'
-  Plug 'scrooloose/nerdtree'
+  Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
   Plug 'scrooloose/nerdcommenter'
   Plug 'scrooloose/syntastic'
 
@@ -222,7 +222,7 @@ set wildignore+=*/doc/*,*/public/assets/*
 function! InitializeDirectories()
   let separator = "."
   let parent = $HOME
-  let prefix = '.nvim'
+  let prefix = '.config/nvim/.nvim'
   let dir_list = {
                   \ 'backup': 'backupdir',
                   \ 'views': 'viewdir',
