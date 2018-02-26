@@ -59,7 +59,6 @@ cask "sqlpro-for-sqlite"
 # Virtualization
 cask "docker"
 cask "jet"
-cask "kitematic"
 cask "vagrant-manager"
 cask "vagrant"
 cask "virtualbox"
