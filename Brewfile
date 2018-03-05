@@ -46,7 +46,6 @@ brew "node"
 brew "perl"
 brew "php70"
 brew "python"
-brew "python3"
 brew "ruby"
 brew "rust"
 
