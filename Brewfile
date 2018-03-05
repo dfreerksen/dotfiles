@@ -1,5 +1,6 @@
 # Tap
 tap "homebrew/versions"
+tap "homebrew/homebrew-php"
 tap "caskroom/cask"
 tap "caskroom/drivers"
 tap "caskroom/fonts"
