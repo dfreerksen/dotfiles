@@ -31,6 +31,7 @@ brew "tree"
 brew "vim", args: ["override-system-vi"]
 
 # Database
+brew "flyway"
 brew "mongodb"
 brew "mysql"
 brew "postgresql"
