@@ -2,6 +2,8 @@
 
 dotfiles
 
+[Usage](./USAGE.md)
+
 ## Installation
 
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
