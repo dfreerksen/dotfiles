@@ -72,16 +72,6 @@ alias spoton="sudo mdutil -a -i on"
 alias ip="curl ipecho.net/plain ; echo"
 alias localip="ipconfig getifaddr en0"
 
-# Intuitive map function
-# For example, to list all directories that contain a certain file:
-# find . -name .gitattributes | map dirname
-alias map="xargs -n1"
-
-# One of @janmoesen’s ProTip™s
-for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
-  alias "$method"="lwp-request -m '$method'"
-done
-
 # Get OS X Software Updates, Homebrew, Cask and NPM
 alias appup="softwareupdate -i -a;"
 alias brewup="brew -v; brew update; brew upgrade; brew cleanup; brew doctor; brew -v"
