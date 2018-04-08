@@ -1,7 +1,6 @@
 # Utilities
 cask "alfred"
 cask "bettertouchtool"
-cask "blockstack"
 cask "caffeine"
 cask "cleanmymac"
 cask "etcher"
