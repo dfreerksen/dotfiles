@@ -2,34 +2,14 @@
 
 Usage. Because I have a bad memory.
 
+Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.railsrc`, `.rspec`, `.rubocop.yml`
+
 ## Shell Shortcuts
 
 | Command | Description            |
 |---------|------------------------|
 | `c`     | Shortcut for `clear`   |
 | `h`     | Shortcut for `history` |
-
-## Shell Extensions
-
-| Command   | Description                    |
-|-----------|--------------------------------|
-| `cpwd`    | Copy current path to clipboard |
-
-## Shell Overwrites
-
-| Command               | Description                                               |
-|-----------------------|-----------------------------------------------------------|
-| `mkdir [DIRECTORY]`   | Overwrite `mkdir [DIRECTORY]` with `mkdir -p [DIRECTORY]` |
-| `ping [DOMAIN OR IP]` | Overwrite `ping` with `ping -c 20`                        |
-
-## Listing Directories
-
-| Command | Description                                           |
-|---------|-------------------------------------------------------|
-| `ls`    | Color output for `ls`                                 |
-| `l`     | List all files in long format, excluding hidden files |
-| `ll`    | List all files in long format, including hidden files |
-| `ld`    | List only directories                                 |
 
 ## Change Directory
 
@@ -40,15 +20,41 @@ Usage. Because I have a bad memory.
 | `....`  | Shortcut for `cd ../../..`    |
 | `.....` | Shortcut for `cd ../../../..` |
 
-## Bundler
+## Shell Overwrites
 
-| Command | Description                   |
-|---------|-------------------------------|
-| `b`     | Shortcut for `bundle`         |
-| `be`    | Shortcut for `bundle exec`    |
-| `bi`    | Shortcut for `bundle install` |
+| Command          | Description                                  |
+|------------------|----------------------------------------------|
+| `ping [OPTIONS]` | Overwrite `ping` with `ping -c 20 [OPTIONS]` |
 
-## Finder Helpers
+## Shell Extensions
+
+| Command            | Description                                           |
+|--------------------|-------------------------------------------------------|
+| `ls`               | Color output for `ls`                                 |
+| `l`                | List all files in long format, excluding hidden files |
+| `ll`               | List all files in long format, including hidden files |
+| `ld`               | List only directories                                 |
+| `o`                | Open current directory in Finder                      |
+| `o [DIRECTORY]`    | Open `[DIRECTORY]` directory in Finder                |
+| `cpwd`             | Copy current path to clipboard                        |
+| `mkcd [DIRECTORY]` | Create a new directory and enter it                   |
+
+## CLI Helper Commands
+
+| Command  | Description                       |
+|----------|-----------------------------------|
+| `reload` | Re-source `~/.bash_profile` (Mac) |
+| `path`   | Pretty print $PATH                |
+| `tre`    | Pretty print tree                 |
+
+### IP Address
+
+| Command           | Description         |
+|-------------------|---------------------|
+| `ip`              | External ip address |
+| `localip`         | Local ip address    |
+
+## Finder (Mac)
 
 | Command     | Description                                                          |
 |-------------|----------------------------------------------------------------------|
@@ -56,48 +62,42 @@ Usage. Because I have a bad memory.
 | `hideall`   | Hide hidden files in Finder                                          |
 | `spoton`    | Enable Spotlight                                                     |
 | `spotoff`   | Disable Spotlight                                                    |
-| `lscleanup` | Clean up LaunchServices to remove duplicates in the “Open With” menu |
 
-## Finder Navigation
+## Updates
 
-| Command | Description                   |
-|---------|-------------------------------|
-| `dl`    | Shortcut for `cd ~/Downloads` |
-| `dt`    | Shortcut for `cd ~/Desktop`   |
+| Command | Description                        |
+|---------|------------------------------------|
+| `sysup` | Run Homebrew, Cask and NPM updates |
+| `appup` | Run macOS Software updates         |
 
-## Finder Open
+## Homebrew
 
-| Command         | Description                               |
-|-----------------|-------------------------------------------|
-| `o`             | Open current directory in Finder          |
-| `o [DIRECTORY]` | Open `~/my_directory` directory in Finder |
+| Command | Description           |
+|---------|-----------------------|
+| `brewup` | Update Homebrew, upgrade packages and run cleanup |
 
-## General Helpers
+## Cask
 
-| Command            | Description                         |
-|--------------------|-------------------------------------|
-| `reload`           | Re-source `~/.bash_profile`         |
-| `mkcd [DIRECTORY]` | Create a new directory and enter it |
-| `ip`               | Echo external IP                    |
-| `localip`          | Echo internal IP                    |
-| `path`             | Pretty print $PATH                  |
+| Command | Description       |
+|---------|-------------------|
+| `caskup` | Update Cask applications and run cleanup |
 
-## Update Applications and Libraries
+## NPM
 
-| Command  | Description                                                  |
-|----------|--------------------------------------------------------------|
-| `appup`  | Update OS X software from the App Store                      |
-| `brewup` | Update Homebrew, upgrade packages and run cleanup            |
-| `caskup` | Update Cask applications and run cleanup                     |
-| `npmup`  | Update NPM, update all outdated global packages (Gulp, etc.) |
-| `sysup`  | Update App Store software, Homebrew, Cask, and NPM.          |
+| Command | Description                                     |
+|---------|-------------------------------------------------|
+| `npmup` | Update NPM, update all outdated global packages |
 
-## Code Editor
+## Git
+
+TODO
+
+## Code Editors
+
+> NOTE: Default `vim` command is overwritten to use NeoVim
 
 | Command           | Description                            |
 |-------------------|----------------------------------------|
-| `e`               | Open in default editor (NeoVim)        |
-| `v`               | Open in default visualeditor (NeoVim)  |
 | `vim`             | Open current directory in NeoVim       |
 | `vim [DIRECTORY]` | Open [DIRECTORY] in NeoVim             |
 | `vim [FILE]`      | Open [FILE] in NeoVim                  |
@@ -108,11 +108,59 @@ Usage. Because I have a bad memory.
 | `s [DIRECTORY]`   | Open [DIRECTORY] in Sublime Text       |
 | `s [FILE]`        | Open [FILE] in Sublime Text            |
 
-> NOTE: Use NeoVim instead of Vim. `nvim` has been overwritten to `vim`
+## Ruby
 
-## Helpful Commands
+| Command | Description                   |
+|---------|-------------------------------|
+| `be`    | Shortcut for `bundle exec`    |
+| `bi`    | Shortcut for `bundle install` |
 
-| Command             | Description                                                                 |
-|---------------------|-----------------------------------------------------------------------------|
-| `tail -f [FILE]`    | Outputs the last 10 lines of [FILE], and continue to monitor it for updates |
-| `tail -n 50 [FILE]` | Outputs the last 50 lines of the file [FILE]                                |
+## Vim
+
+TODO
+
+## tmux
+
+TODO
+
+## tail
+
+Outputs the last 10 lines of [FILE], and continue to monitor it for updates. Example `tail -f ~/logs/production.log`
+
+```
+$ tail -f [FILE]
+````
+
+Outputs the last 50 lines of the file [FILE]. Example `tail -n 50 ~/logs/production.log`
+
+```
+$ tail -n 50 [FILE]
+````
+
+## ngrok
+
+Useful commands for [`ngrok`](https://ngrok.com/)
+
+Secure public URL for port [PORT] web server. Example `ngrok http 80`
+
+```
+$ ngrok http [PORT]
+```
+
+Port [PORT] available at [SUBDOMAIN].ngrok.io. Example `ngrok http -subdomain=baz 8080`
+
+```
+$ ngrok http -subdomain=[SUBDOMAIN] [PORT]
+```
+
+Tunnel to [HOST]:[PORT] instead of localhost. Example `ngrok http foo.dev:80`
+
+```
+$ ngrok http [HOST]:[PORT]
+```
+
+TLS traffic for [HOSTNAME] to port [PORT]. Example `ngrok tls -hostname=foo.com 443`
+
+```
+$ ngrok tls -hostname=[HOSTNAME] [PORT]
+```

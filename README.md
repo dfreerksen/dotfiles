@@ -4,6 +4,10 @@ dotfiles
 
 [Usage](./USAGE.md)
 
+## Requirements
+
+* Mac (never been tested on anything else)
+
 ## Installation
 
 Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
@@ -24,13 +28,26 @@ or
 $ sh setup.sh -f
 ```
 
-## Git Configuration
+## Setup
 
-#### .gitconfig.local
+### NPM
+
+Global NPM packages
+
+```
+$ npm install gulp-cli -g
+$ npm install standard -g
+```
+
+### .gitconfig.local
+
+Create a `~/.gitconfig.local` file
 
 ```
 $ touch ~/.gitconfig.local
 ```
+
+Add the following into the file
 
 ```
 [user]
@@ -54,12 +71,6 @@ $ touch ~/.gitconfig.local
 ```
 $ ssh-keygen -t rsa
 $ ssh-add ~/.ssh/id_rsa
-```
-
-## ngrok
-
-```
-$ ngrok http 3000
 ```
 
 ## Contributing

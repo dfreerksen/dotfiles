@@ -1,15 +1,6 @@
-AllCops:
-  Exclude:
-    - "spec/dummy/**/*"
-
-Layout/DotPosition:
-  EnforcedStyle: leading
-
-Metrics/LineLength:
-  Max: 80
-
 Style/StringLiterals:
   EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
 
 Style/StringLiteralsInInterpolation:
   EnforcedStyle: double_quotes

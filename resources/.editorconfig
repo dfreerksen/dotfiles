@@ -12,13 +12,13 @@ insert_final_newline = true
 tab_width = 2
 trim_trailing_whitespace = true
 
-[*.{css,coffee,html|js,less,php,scss,sass}]
+[*.{coffee,css,html,js,less,php,sass,scss}]
 max_line_length = 120
 
-[*.{md|rb}]
+[*.{rb}]
 max_line_length = 80
 
-[*.{erb|html,php}]
+[*.{erb,html,php}]
 indent_size = 4
 tab_width = 4
 
