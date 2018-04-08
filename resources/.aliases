@@ -18,7 +18,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
 # Color output for `ls`
-alias ls="command ls -G
+alias ls="command ls -G"
 
 # List all files colorized in long format, excluding hidden files
 alias l="ls -lF -G"
@@ -62,7 +62,7 @@ alias ip="curl ipecho.net/plain ; echo"
 alias localip="ipconfig getifaddr en0"
 
 # Get OS X Software Updates, Homebrew, Cask and NPM
-alias appup="softwareupdate -i -a;"
+alias appup="softwareupdate -i -a"
 alias brewup="brew -v; brew update; brew upgrade; brew cleanup --prune=30; brew doctor; brew -v"
 alias caskup="brew cask --version; brew cu --all; brew cask cleanup; brew cask --version"
 alias npmup="npm -v; npm install npm -g; npm outdated -g --depth=0; npm update -g; npm -v"
