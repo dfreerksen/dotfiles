@@ -56,12 +56,12 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 
 ## Finder (Mac)
 
-| Command     | Description                                                          |
-|-------------|----------------------------------------------------------------------|
-| `showall`   | Show hidden files in Finder                                          |
-| `hideall`   | Hide hidden files in Finder                                          |
-| `spoton`    | Enable Spotlight                                                     |
-| `spotoff`   | Disable Spotlight                                                    |
+| Command     | Description                 |
+|-------------|-----------------------------|
+| `showall`   | Show hidden files in Finder |
+| `hideall`   | Hide hidden files in Finder |
+| `spoton`    | Enable Spotlight            |
+| `spotoff`   | Disable Spotlight           |
 
 ## Updates
 
@@ -72,14 +72,14 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 
 ## Homebrew
 
-| Command | Description           |
-|---------|-----------------------|
+| Command | Description                                        |
+|---------|----------------------------------------------------|
 | `brewup` | Update Homebrew, upgrade packages and run cleanup |
 
 ## Cask
 
-| Command | Description       |
-|---------|-------------------|
+| Command | Description                               |
+|---------|-------------------------------------------|
 | `caskup` | Update Cask applications and run cleanup |
 
 ## NPM
