@@ -30,6 +30,12 @@ $ sh setup.sh -f
 
 ## Setup
 
+### Xcode
+
+```
+$ sudo xcodebuild -license
+```
+
 ### NPM
 
 Global NPM packages
