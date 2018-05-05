@@ -145,6 +145,12 @@ TODO
 
 TODO
 
+## Atom
+
+| Command            | Description           |
+|--------------------|-----------------------|
+| `Shift + Ctrl + M` | Open Markdown Preview |
+
 ## tmux
 
 TODO
