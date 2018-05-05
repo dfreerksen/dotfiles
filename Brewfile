@@ -53,6 +53,7 @@ brew "rust"
 
 # Managers
 brew "composer"
+brew "nvm"
 brew "rbenv"
 brew "yarn"
 

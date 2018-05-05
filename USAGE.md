@@ -88,6 +88,32 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 |---------|-------------------------------------------------|
 | `npmup` | Update NPM, update all outdated global packages |
 
+## Version Managers
+
+### NVM
+
+| Command | Description                             |
+|---------|-----------------------------------------|
+| `nvm current` | Current version of Node           |
+| `nvm install x.y.z` | Install version of Node     |
+| `nvm use x.y` | Use version of Node               |
+| `nvm ls` | List installed versions of Node        |
+| `nvm ls-remote` | List available versions of Node |
+
+> NOTE: Use with `.nvmrc` file
+
+### Rbenv
+
+| Command | Description                                    |
+|---------|------------------------------------------------|
+| `rbenv version` | Current version of Ruby                |
+| `rbenv install x.y.z` | Install version of Ruby          |
+| `rbenv global x.y.z` | Use version of Ruby globally      |
+| `rbenv versions` | List installed versions of Ruby       |
+| `rbenv install --list` | List available versions of Ruby |
+
+> NOTE: Use with `.ruby-version` file
+
 ## Git
 
 TODO

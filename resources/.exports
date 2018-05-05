@@ -7,6 +7,10 @@ export PATH=/usr/local/sbin:$PATH
 export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+# NVM
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh
+
 # Make Vim the default editor
 export EDITOR="vim"
 export VISUAL="vim"
