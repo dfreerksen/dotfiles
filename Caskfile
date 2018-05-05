@@ -1,27 +1,23 @@
 # Utilities
 cask "alfred"
-cask "bettertouchtool"
 cask "caffeine"
 cask "cleanmymac"
 cask "etcher"
 cask "insomnia"
 cask "iterm2"
 cask "java"
-cask "lepton"
 cask "ngrok"
-cask "paw"
 cask "the-unarchiver"
 cask "zeplin"
 
 # Drivers
-cask "wd-my-cloud"
+# none
 
 # Entertainment
 cask "spotify"
 cask "transmission"
 
 # Productivity
-cask "codekit"
 cask "fork"
 cask "forklift"
 cask "github"
@@ -30,7 +26,6 @@ cask "tower"
 # Cloud
 cask "dropbox"
 cask "google-backup-and-sync"
-cask "owncloud"
 cask "sync"
 
 # Communication
@@ -39,6 +34,7 @@ cask "skype"
 # Text/Markdown Editors
 cask "atom"
 cask "boostnote"
+cask "lepton"
 cask "macdown"
 cask "sublime-text"
 
@@ -51,7 +47,6 @@ cask "torbrowser"
 # Database
 cask "postgres"
 cask "postico"
-cask "querious"
 cask "sequel-pro"
 cask "sqlpro-for-sqlite"
 
