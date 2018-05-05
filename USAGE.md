@@ -47,7 +47,13 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | `path`   | Pretty print $PATH                |
 | `tre`    | Pretty print tree                 |
 
-### IP Address
+## System information
+
+| Command  | Description        |
+|----------|--------------------|
+| `archey` | System information |
+
+## IP Address
 
 | Command           | Description         |
 |-------------------|---------------------|
