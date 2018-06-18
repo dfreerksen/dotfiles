@@ -1,11 +1,11 @@
 # Utilities
 cask "alfred"
-cask "caffeine"
 cask "cleanmymac"
 cask "etcher"
 cask "insomnia"
 cask "iterm2"
 cask "java"
+cask "keepingyouawake"
 cask "ngrok"
 cask "the-unarchiver"
 cask "zeplin"
