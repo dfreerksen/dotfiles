@@ -51,6 +51,7 @@ cask "sequel-pro"
 cask "sqlpro-for-sqlite"
 
 # Virtualization
+cask "chromedriver"
 cask "docker"
 cask "jet"
 cask "vagrant-manager"

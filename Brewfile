@@ -63,6 +63,7 @@ brew "libsass"
 
 # Development
 brew "editorconfig"
+brew "geckodriver"
 brew "phantomjs"
 brew "php-code-sniffer"
 brew "php70-xdebug"
