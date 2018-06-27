@@ -69,4 +69,7 @@ curl -fLo ~/.config/nvim/colors/Tomorrow-Night.vim --create-dirs \
 # Install NeoVim plugins
 vim +PlugInstall +qall
 
+# Doctor
+brew doctor
+
 echo "Done!"
