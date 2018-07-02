@@ -87,7 +87,6 @@ brew "shared-mime-info"
 # Else
 brew "autoconf"
 brew "fontconfig"
-brew "gemnasium-toolbelt"
 brew "gettext"
 brew "glib"
 brew "gnupg"
