@@ -107,8 +107,6 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | `nvm ls`            | List installed versions of Node         |
 | `nvm ls-remote`     | List available versions of Node         |
 
-
-
 > NOTE: Use with `.nvmrc` file
 
 ### Rbenv

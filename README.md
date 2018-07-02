@@ -1,8 +1,6 @@
 # dfreerksen/dotfiles
 
-dotfiles
-
-[Usage](./USAGE.md)
+dotfiles. See [usage](./USAGE.md)
 
 ## Requirements
 
