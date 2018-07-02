@@ -17,17 +17,17 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# Color output for `ls`
-alias ls="command ls -G"
-
 # List all files colorized in long format, excluding hidden files
 alias l="ls -lF -G"
+
+# List only directories
+alias ld="ls -lF -G"
 
 # List all files colorized in long format, including hidden files
 alias ll="ls -laF -G"
 
-# List only directories
-alias ld="ls -lF -G"
+# Color output for `ls`
+alias ls="command ls -G"
 
 # Copy current path to clipboard
 alias cpwd="pwd | tr -d '[:space:]' | pbcopy"
