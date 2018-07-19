@@ -35,6 +35,9 @@ alias cpwd="pwd | tr -d '[:space:]' | pbcopy"
 # Make a directory (if it doesn't already exist)
 alias mkdir="mkdir -p"
 
+# Docker Compose
+alias dc="docker-compose"
+
 # Bundler
 alias be="bundle exec"
 alias bi="bundle install"

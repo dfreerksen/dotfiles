@@ -141,6 +141,12 @@ TODO
 | `s [DIRECTORY]`   | Open [DIRECTORY] in Sublime Text       |
 | `s [FILE]`        | Open [FILE] in Sublime Text            |
 
+## Docker
+
+| Command | Description                   |
+|---------|-------------------------------|
+| `dc`    | Shortcut for `docker-compose` |
+
 ## Ruby
 
 | Command | Description                   |
