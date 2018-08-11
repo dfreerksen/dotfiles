@@ -31,7 +31,6 @@ brew "tree"
 brew "vim", args: ["override-system-vi"]
 
 # Database
-brew "flyway"
 brew "mongodb"
 brew "mysql"
 brew "postgresql"
@@ -63,11 +62,9 @@ brew "libsass"
 
 # Development
 brew "editorconfig"
+brew "flyway"
 brew "geckodriver"
 brew "phantomjs"
-brew "php-code-sniffer"
-brew "php70-xdebug"
-brew "redis"
 brew "tmate"
 brew "tmux"
 
@@ -80,7 +77,6 @@ brew "librsvg"
 brew "libtiff"
 
 # Information
-brew "archey"
 brew "git-standup"
 brew "shared-mime-info"
 
