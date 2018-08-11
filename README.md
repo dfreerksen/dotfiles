@@ -70,6 +70,20 @@ Add the following into the file
   token = your_token
 ```
 
+### .aliases.local
+
+Create a `~/.aliases.local` file
+
+```
+$ touch ~/.aliases.local
+```
+
+Add the following into the file
+
+```
+alias t="open -a Tower"
+```
+
 ## SSH
 
 ```
