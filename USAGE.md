@@ -66,8 +66,6 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 |-------------|-----------------------------|
 | `showall`   | Show hidden files in Finder |
 | `hideall`   | Hide hidden files in Finder |
-| `spoton`    | Enable Spotlight            |
-| `spotoff`   | Disable Spotlight           |
 
 ## Updates
 

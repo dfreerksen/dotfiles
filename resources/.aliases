@@ -55,10 +55,6 @@ alias ping="ping -c 20"
 alias showall="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hideall="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
 
-# Enable/disable Spotlight
-alias spotoff="sudo mdutil -a -i off"
-alias spoton="sudo mdutil -a -i on"
-
 # IP addresses
 alias ip="curl ipecho.net/plain ; echo"
 alias localip="ipconfig getifaddr en0"
