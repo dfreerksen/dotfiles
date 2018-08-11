@@ -15,7 +15,7 @@ trim_trailing_whitespace = true
 [*.{coffee,css,html,js,less,php,sass,scss}]
 max_line_length = 120
 
-[*.{rb}]
+[*.{jbuilder,rb}]
 max_line_length = 80
 
 [*.{erb,html,php}]
