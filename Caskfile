@@ -26,6 +26,7 @@ cask "dropbox"
 cask "forklift"
 cask "google-backup-and-sync"
 cask "sync"
+cask "syncthing-app"
 
 # Communication
 cask "skype"
