@@ -38,7 +38,7 @@ brew bundle --file=./Brewfile
 brew bundle --file=./Caskfile
 
 # APM themes and packages for Atom
-apmPackages=( one-dark-ui
+apmPackages=( spacegray-dark-neue-syntax
               angularjs atom-beautify busy-signal editorconfig intentions
               language-haml linter linter-csslint linter-erb linter-eslint
               linter-haml linter-htmlhint linter-js-standard linter-jshint
