@@ -1,4 +1,5 @@
 # Utilities
+cask "1password"
 cask "alfred"
 cask "cleanmymac"
 cask "etcher"
