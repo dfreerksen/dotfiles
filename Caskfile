@@ -1,26 +1,23 @@
 # Utilities
 cask "1password"
 cask "alfred"
+cask "boostnote"
 cask "cleanmymac"
-cask "etcher"
 cask "insomnia"
 cask "iterm2"
 cask "java"
 cask "keepingyouawake"
-cask "ngrok"
 cask "the-unarchiver"
-cask "zeplin"
+cask "transmission"
+cask "vanilla"
 
-# Drivers
-# none
+# Developer Tools
+cask "ngrok"
+cask "tower"
+cask "zeplin"
 
 # Entertainment
 cask "spotify"
-cask "transmission"
-
-# Productivity
-cask "fork"
-cask "tower"
 
 # Cloud
 cask "dropbox"
@@ -30,20 +27,20 @@ cask "sync"
 cask "syncthing-app"
 
 # Communication
+cask "signal"
 cask "skype"
 
 # Text/Markdown Editors
 cask "atom"
-cask "boostnote"
 cask "macdown"
 cask "sublime-text"
 
 # Browsers
-cask "brave"
 cask "firefox"
 cask "google-chrome"
 
 # Database
+cask "db-browser-for-sqlite"
 cask "postgres"
 cask "postico"
 cask "sequel-pro"
@@ -65,7 +62,3 @@ cask "font-input"
 cask "cryptomator"
 cask "tunnelbear"
 cask "viscosity"
-
-# Misc
-cask "poedit"
-cask "vanilla"
