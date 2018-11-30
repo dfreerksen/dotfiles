@@ -41,6 +41,7 @@ alias dc="docker-compose"
 # Bundler
 alias be="bundle exec"
 alias bi="bundle install"
+alias bu="bundle update"
 
 # Reload shell
 alias reload="source ~/.bash_profile"

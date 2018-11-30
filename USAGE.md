@@ -151,6 +151,7 @@ TODO
 |---------|-------------------------------|
 | `be`    | Shortcut for `bundle exec`    |
 | `bi`    | Shortcut for `bundle install` |
+| `bu`    | Shortcut for `bundle update`  |
 
 ## Vim
 
