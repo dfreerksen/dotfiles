@@ -1,6 +1,7 @@
 # Utilities
 cask "1password"
 cask "alfred"
+cask "bartender"
 cask "boostnote"
 cask "cleanmymac"
 cask "insomnia"
@@ -9,7 +10,6 @@ cask "java"
 cask "keepingyouawake"
 cask "the-unarchiver"
 cask "transmission"
-cask "vanilla"
 
 # Developer Tools
 cask "ngrok"
