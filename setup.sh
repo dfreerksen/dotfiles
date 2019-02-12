@@ -39,6 +39,7 @@ brew bundle --file=./Caskfile
 
 # APM themes and packages for Atom
 apmPackages=( spacegray-dark-neue-syntax
+              city-lights-icons city-lights-syntax city-lights-ui
               angularjs atom-beautify busy-signal editorconfig intentions
               language-haml linter linter-csslint linter-erb linter-eslint
               linter-haml linter-htmlhint linter-js-standard linter-jshint
