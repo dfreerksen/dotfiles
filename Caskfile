@@ -1,60 +1,60 @@
 # Utilities
-cask "1password"
-cask "alfred"
-cask "bartender"
-cask "boostnote"
-cask "cleanmymac"
-cask "insomnia"
-cask "iterm2"
-cask "java"
-cask "keepingyouawake"
-cask "the-unarchiver"
+cask '1password'
+cask 'alfred'
+cask 'bartender'
+cask 'boostnote'
+cask 'cleanmymac'
+cask 'insomnia'
+cask 'iterm2'
+cask 'java'
+cask 'keepingyouawake'
+cask 'the-unarchiver'
 
 # Developer Tools
-cask "ngrok"
-cask "tower"
-cask "zeplin"
+cask 'ngrok'
+cask 'tower'
+cask 'zeplin'
 
 # Entertainment
-cask "spotify"
+cask 'spotify'
 
 # Cloud
-cask "dropbox"
-cask "forklift"
-cask "google-backup-and-sync"
-cask "sync"
-cask "syncthing-app"
+cask 'dropbox'
+cask 'forklift'
+cask 'google-backup-and-sync'
+cask 'sync'
+cask 'syncthing-app'
 
 # Communication
-cask "signal"
-cask "skype"
+cask 'signal'
+cask 'skype'
 
 # Text/Markdown Editors
-cask "atom"
-cask "macdown"
-cask "sublime-text"
+cask 'atom'
+cask 'macdown'
+cask 'sublime-text'
 
 # Browsers
-cask "firefox"
-cask "google-chrome"
+cask 'firefox'
+cask 'google-chrome'
 
 # Database
-cask "postgres"
-cask "postico"
-cask "sequel-pro"
-cask "sqlpro-for-sqlite"
+cask 'postgres'
+cask 'postico'
+cask 'sequel-pro'
+cask 'sqlpro-for-sqlite'
 
 # Virtualization
-cask "chromedriver"
-cask "docker"
-cask "jet"
+cask 'chromedriver'
+cask 'docker'
+cask 'jet'
 
 # Fonts
-cask "font-hack"
-cask "font-inconsolata"
-cask "font-input"
+cask 'font-hack'
+cask 'font-inconsolata'
+cask 'font-input'
 
 # Privacy/Security
-cask "cryptomator"
-cask "tunnelbear"
-cask "viscosity"
+cask 'cryptomator'
+cask 'tunnelbear'
+cask 'viscosity'
