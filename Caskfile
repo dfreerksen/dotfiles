@@ -40,7 +40,6 @@ cask "firefox"
 cask "google-chrome"
 
 # Database
-cask "db-browser-for-sqlite"
 cask "postgres"
 cask "postico"
 cask "sequel-pro"
