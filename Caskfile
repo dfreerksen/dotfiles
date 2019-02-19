@@ -9,7 +9,6 @@ cask "iterm2"
 cask "java"
 cask "keepingyouawake"
 cask "the-unarchiver"
-cask "transmission"
 
 # Developer Tools
 cask "ngrok"
