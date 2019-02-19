@@ -49,8 +49,6 @@ cask "sqlpro-for-sqlite"
 cask "chromedriver"
 cask "docker"
 cask "jet"
-cask "virtualbox"
-cask "virtualbox-extension-pack"
 
 # Fonts
 cask "font-hack"
