@@ -35,6 +35,7 @@ cask 'macdown'
 cask 'sublime-text'
 
 # Browsers
+cask 'brave-browser'
 cask 'firefox'
 cask 'google-chrome'
 
