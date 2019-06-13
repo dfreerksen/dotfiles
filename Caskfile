@@ -43,7 +43,6 @@ cask 'google-chrome'
 cask 'postgres'
 cask 'postico'
 cask 'sequel-pro'
-cask 'sqlpro-for-sqlite'
 
 # Virtualization
 cask 'chromedriver'
