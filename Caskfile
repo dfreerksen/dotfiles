@@ -27,7 +27,6 @@ cask 'syncthing-app'
 
 # Communication
 cask 'signal'
-cask 'skype'
 
 # Text/Markdown Editors
 cask 'atom'
