@@ -21,7 +21,6 @@ cask "spotify"
 # Cloud
 cask "dropbox"
 cask "forklift"
-cask "google-backup-and-sync"
 cask "sync"
 cask "syncthing-app"
 
