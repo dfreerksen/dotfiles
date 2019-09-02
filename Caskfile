@@ -1,7 +1,6 @@
 # Utilities
 cask "1password"
 cask "alfred"
-cask "alacritty"
 cask "bartender"
 cask "boostnote"
 cask "cleanmymac"
