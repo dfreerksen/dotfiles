@@ -19,7 +19,6 @@ cask "tower"
 cask "spotify"
 
 # Cloud
-cask "dropbox"
 cask "forklift"
 cask "sync"
 cask "syncthing-app"
