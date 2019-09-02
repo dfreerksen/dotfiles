@@ -20,7 +20,6 @@ cask "spotify"
 
 # Cloud
 cask "forklift"
-cask "sync"
 cask "syncthing-app"
 
 # Communication
