@@ -48,6 +48,7 @@ cask "jet"
 cask "font-hack"
 cask "font-inconsolata"
 cask "font-input"
+cask "font-sacramento"
 
 # Privacy/Security
 cask "cryptomator"
