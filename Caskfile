@@ -23,7 +23,6 @@ cask "syncthing-app"
 
 # Communication
 cask "signal"
-cask "zoomus"
 
 # Text/Markdown Editors
 cask "atom"
