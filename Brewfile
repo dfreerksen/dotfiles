@@ -46,7 +46,6 @@ brew "perl"
 brew "php"
 brew "python"
 brew "ruby"
-brew "rust"
 
 # Managers
 brew "composer"
@@ -62,7 +61,6 @@ brew "libsass"
 brew "editorconfig"
 brew "flyway"
 brew "geckodriver"
-brew "phantomjs"
 brew "tmate"
 brew "tmux"
 
@@ -75,7 +73,6 @@ brew "librsvg"
 brew "libtiff"
 
 # Information
-brew "git-standup"
 brew "shared-mime-info"
 
 # Else
