@@ -1,9 +1,11 @@
 # Utilities
 cask "1password"
 cask "alfred"
+cask "balenaetcher"
 cask "bartender"
 cask "boostnote"
 cask "cleanmymac"
+cask "cyberduck"
 cask "insomnia"
 cask "iterm2"
 cask "java"
@@ -11,8 +13,10 @@ cask "keepingyouawake"
 cask "the-unarchiver"
 
 # Developer Tools
+cask "masscode"
 cask "ngrok"
 cask "tower"
+cask "transmission"
 
 # Entertainment
 cask "spotify"
@@ -22,7 +26,7 @@ cask "forklift"
 cask "syncthing-app"
 
 # Communication
-cask "signal"
+cask "slack"
 
 # Text/Markdown Editors
 cask "atom"
@@ -33,6 +37,7 @@ cask "sublime-text"
 cask "brave-browser"
 cask "firefox"
 cask "google-chrome"
+cask "tor-browser"
 
 # Database
 cask "db-browser-for-sqlite"
