@@ -15,7 +15,6 @@ cask "the-unarchiver"
 # Developer Tools
 cask "ngrok"
 cask "tower"
-cask "transmission"
 
 # Entertainment
 cask "spotify"
