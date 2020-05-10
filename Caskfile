@@ -13,7 +13,6 @@ cask "keepingyouawake"
 cask "the-unarchiver"
 
 # Developer Tools
-cask "masscode"
 cask "ngrok"
 cask "tower"
 cask "transmission"
