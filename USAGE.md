@@ -10,6 +10,7 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 |---------|------------------------|
 | `c`     | Shortcut for `clear`   |
 | `h`     | Shortcut for `history` |
+| `sc`    | Source `~/.zshrc`      |
 
 ## Change Directory
 
@@ -18,7 +19,6 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | `..`    | Shortcut for `cd ..`          |
 | `...`   | Shortcut for `cd ../..`       |
 | `....`  | Shortcut for `cd ../../..`    |
-| `.....` | Shortcut for `cd ../../../..` |
 
 ## Shell Overwrites
 
@@ -31,60 +31,17 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | Command            | Description                                           |
 |--------------------|-------------------------------------------------------|
 | `ls`               | Color output for `ls`                                 |
-| `l`                | List all files in long format, excluding hidden files |
 | `ll`               | List all files in long format, including hidden files |
-| `ld`               | List only directories                                 |
 | `o`                | Open current directory in Finder                      |
 | `o [DIRECTORY]`    | Open `[DIRECTORY]` directory in Finder                |
 | `cpwd`             | Copy current path to clipboard                        |
 | `mkcd [DIRECTORY]` | Create a new directory and enter it                   |
-
-## CLI Helper Commands
-
-| Command  | Description                       |
-|----------|-----------------------------------|
-| `reload` | Re-source `~/.bash_profile` (Mac) |
-| `path`   | Pretty print $PATH                |
-| `tre`    | Pretty print tree                 |
-
-## System information
-
-| Command  | Description        |
-|----------|--------------------|
-| `archey` | System information |
-
-## IP Address
-
-| Command           | Description         |
-|-------------------|---------------------|
-| `ip`              | External ip address |
-| `localip`         | Local ip address    |
-
-## Finder (Mac)
-
-| Command     | Description                 |
-|-------------|-----------------------------|
-| `showall`   | Show hidden files in Finder |
-| `hideall`   | Hide hidden files in Finder |
-
-## Updates
-
-| Command | Description                        |
-|---------|------------------------------------|
-| `sysup` | Run Homebrew, Cask and NPM updates |
-| `appup` | Run macOS Software updates         |
 
 ## Homebrew
 
 | Command | Description                                        |
 |---------|----------------------------------------------------|
 | `brewup` | Update Homebrew, upgrade packages and run cleanup |
-
-## Cask
-
-| Command | Description                               |
-|---------|-------------------------------------------|
-| `caskup` | Update Cask applications and run cleanup |
 
 ## NPM
 
@@ -119,19 +76,12 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 
 > NOTE: Use with `.ruby-version` file
 
-## Git
-
-TODO
-
 ## Code Editors
 
 > NOTE: Default `vim` command is overwritten to use NeoVim
 
 | Command           | Description                            |
 |-------------------|----------------------------------------|
-| `vim`             | Open current directory in NeoVim       |
-| `vim [DIRECTORY]` | Open [DIRECTORY] in NeoVim             |
-| `vim [FILE]`      | Open [FILE] in NeoVim                  |
 | `a`               | Open current directory in Atom         |
 | `a [DIRECTORY]`   | Open [DIRECTORY] in Atom               |
 | `a [FILE]`        | Open [FILE] in Atom                    |
@@ -151,21 +101,12 @@ TODO
 |---------|-------------------------------|
 | `be`    | Shortcut for `bundle exec`    |
 | `bi`    | Shortcut for `bundle install` |
-| `bu`    | Shortcut for `bundle update`  |
-
-## Vim
-
-TODO
 
 ## Atom
 
 | Command            | Description           |
 |--------------------|-----------------------|
 | `Shift + Ctrl + M` | Open Markdown Preview |
-
-## tmux
-
-TODO
 
 ## tail
 

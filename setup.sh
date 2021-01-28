@@ -5,7 +5,7 @@ cd "$(dirname "${BASH_SOURCE}")";
 function doIt () {
   rsync --exclude ".DS_Store" -avh --no-perms ./resources/ ~;
 
-  source ~/.bash_profile;
+  source ~/.zshrc;
 }
 
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
@@ -38,13 +38,8 @@ brew bundle --file=./Brewfile
 brew bundle --file=./Caskfile
 
 # APM themes and packages for Atom
-apmPackages=( angularjs atom-beautify busy-signal editorconfig intentions
-              language-haml linter linter-csslint linter-erb linter-eslint
-              linter-haml linter-htmlhint linter-js-standard linter-jshint
-              linter-php linter-phpcs linter-reek linter-rubocop
-              linter-scss-lint linter-ui-default minimap pigments
-              rails-i18n-autocomplete rails-rspec svg-preview
-              teletype yard )
+apmPackages=( busy-signal color-picker linter linter-eslint linter-rubocop linter-stylelint linter-ui-default minimap 
+              pigments rails-rspec svg-preview teletype yard )
 
 for i in "${apmPackages[@]}"
 do
@@ -56,17 +51,8 @@ do
   fi
 done
 
-# Install latest of `plug.vim`
-curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
-     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-
-# Install latest of Tomorrow Night VIM theme
-# https://github.com/ChrisKempson/Tomorrow-Theme
-curl -fLo ~/.config/nvim/colors/Tomorrow-Night.vim --create-dirs \
-     https://raw.githubusercontent.com/chriskempson/tomorrow-theme/master/vim/colors/Tomorrow-Night.vim
-
-# Install NeoVim plugins
-vim +PlugInstall +qall
+# Cleanup
+brew cleanup
 
 # Doctor
 brew doctor

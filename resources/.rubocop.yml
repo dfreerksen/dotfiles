@@ -1,6 +1,0 @@
-Style/StringLiterals:
-  EnforcedStyle: double_quotes
-  ConsistentQuotesInMultiline: true
-
-Style/StringLiteralsInInterpolation:
-  EnforcedStyle: double_quotes

@@ -1,0 +1,7 @@
+# Rbenv
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh

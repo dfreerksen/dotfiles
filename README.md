@@ -34,15 +34,6 @@ $ sh setup.sh -f
 $ sudo xcodebuild -license
 ```
 
-### NPM
-
-Global NPM packages
-
-```
-$ npm install gulp-cli -g
-$ npm install standard -g
-```
-
 ### .gitconfig.local
 
 Create a `~/.gitconfig.local` file
@@ -68,20 +59,6 @@ Add the following into the file
 
   user = your_username
   token = your_token
-```
-
-### .aliases.local
-
-Create a `~/.aliases.local` file
-
-```
-$ touch ~/.aliases.local
-```
-
-Add the following into the file
-
-```
-alias t="open -a Tower"
 ```
 
 ## SSH
