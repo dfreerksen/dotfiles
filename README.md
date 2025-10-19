@@ -8,31 +8,19 @@ dotfiles. See [usage](./USAGE.md)
 
 ## Installation
 
-Before installing scripts, you will be asked `This may overwrite existing files in your home directory. Are you sure? (y/n)`. Confirm whether or not you want to overwrite existing files.
+Initial setup
 
 ```
-$ sh setup.sh
+$ make setup
 ```
 
-To install the scripts without first asking to overwrite files
+## Updating
 
 ```
-$ sh setup.sh --force
-```
-
-or
-
-```
-$ sh setup.sh -f
+$ make update
 ```
 
 ## Setup
-
-### Xcode
-
-```
-$ sudo xcodebuild -license
-```
 
 ### .gitconfig.local
 

@@ -1,8 +1,5 @@
 .DS_Store
 .Trashes
-.zshrc-aliases.local
 .gitconfig.local
 Thumbs.db
 tmp/
-Brewfile.lock.json
-Caskfile.lock.json

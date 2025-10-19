@@ -1,8 +1,6 @@
 # Usage
 
-Usage. Because I have a bad memory.
-
-Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.railsrc`, `.rspec`, `.rubocop.yml`
+Usage. Because I have a bad memory. This document only pertains to if you have already run `make setup` and/or `make update` from README.md.
 
 ## Shell Shortcuts
 
@@ -19,37 +17,61 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | `..`    | Shortcut for `cd ..`          |
 | `...`   | Shortcut for `cd ../..`       |
 | `....`  | Shortcut for `cd ../../..`    |
+| `.....` | Shortcut for `cd ../../../..` |
 
 ## Shell Overwrites
 
-| Command          | Description                                  |
-|------------------|----------------------------------------------|
-| `ping [OPTIONS]` | Overwrite `ping` with `ping -c 20 [OPTIONS]` |
+| Command           | Description                                  |
+|-------------------|----------------------------------------------|
+| `ping [OPTIONS]`  | Overwrite `ping` with `ping -c 20 [OPTIONS]` |
+| `mkdir [OPTIONS]` | Overwrite `mkdir` with `mkdir -p [OPTIONS]`  |
 
 ## Shell Extensions
 
 | Command            | Description                                           |
 |--------------------|-------------------------------------------------------|
-| `ls`               | Color output for `ls`                                 |
 | `ll`               | List all files in long format, including hidden files |
 | `o`                | Open current directory in Finder                      |
 | `o [DIRECTORY]`    | Open `[DIRECTORY]` directory in Finder                |
 | `cpwd`             | Copy current path to clipboard                        |
 | `mkcd [DIRECTORY]` | Create a new directory and enter it                   |
 
+## Docker
+
+| Command | Description                   |
+|---------|-------------------------------|
+| `dc`    | Shortcut for `docker-compose` |
+
+## Ruby
+
+| Command | Description                   |
+|---------|-------------------------------|
+| `be`    | Shortcut for `bundle exec`    |
+| `bi`    | Shortcut for `bundle install` |
+
 ## Homebrew
 
-| Command | Description                                        |
-|---------|----------------------------------------------------|
-| `brewup` | Update Homebrew, upgrade packages and run cleanup |
+| Command | Description                                    |
+|---------|------------------------------------------------|
+| `brewup` | Update Homebrew, install updates, run cleanup |
+
+## Mac App Store
+
+| Command | Description                    |
+|---------|--------------------------------|
+| `masup` | List outdated, install updates |
 
 ## NPM
 
-| Command | Description                                     |
-|---------|-------------------------------------------------|
-| `npmup` | Update NPM, update all outdated global packages |
+| Command | Description                              |
+|---------|------------------------------------------|
+| `npmup` | List outdated, install updates, clean up |
+
+> NOTE: This only pertains to global packages, not packages installed on local projects with NPM or Yarn
 
 ## Version Managers
+
+This is just informational. It is not overwritten
 
 ### NVM
 
@@ -75,38 +97,6 @@ Various global settings get set for; `.editorconfig`, `.gemrc`, `.gitignore`, `.
 | `rbenv install --list` | List available versions of Ruby |
 
 > NOTE: Use with `.ruby-version` file
-
-## Code Editors
-
-> NOTE: Default `vim` command is overwritten to use NeoVim
-
-| Command           | Description                            |
-|-------------------|----------------------------------------|
-| `a`               | Open current directory in Atom         |
-| `a [DIRECTORY]`   | Open [DIRECTORY] in Atom               |
-| `a [FILE]`        | Open [FILE] in Atom                    |
-| `s`               | Open current directory in Sublime Text |
-| `s [DIRECTORY]`   | Open [DIRECTORY] in Sublime Text       |
-| `s [FILE]`        | Open [FILE] in Sublime Text            |
-
-## Docker
-
-| Command | Description                   |
-|---------|-------------------------------|
-| `dc`    | Shortcut for `docker-compose` |
-
-## Ruby
-
-| Command | Description                   |
-|---------|-------------------------------|
-| `be`    | Shortcut for `bundle exec`    |
-| `bi`    | Shortcut for `bundle install` |
-
-## Atom
-
-| Command            | Description           |
-|--------------------|-----------------------|
-| `Shift + Ctrl + M` | Open Markdown Preview |
 
 ## tail
 
