@@ -76,6 +76,6 @@ alias dc="docker-compose"
 alias ping="ping -c 20"
 
 # Get OS X Software Updates, Homebrew, Cask and NPM
-alias brewup="brew --version; brew update; brew upgrade; brew cleanup --prune=30; brew doctor; brew --version"
+alias brewup="brew --version; brew update; brew upgrade; brew upgrade --cask; brew cleanup --prune=30; brew doctor; brew --version"
 alias masup="mas version; mas outdated; mas upgrade; mas version"
 alias npmup="npm -v; npm -g outdated; npm -g update; npm -g prune; npm -g list --depth=0; npm -v"
