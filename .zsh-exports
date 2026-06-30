@@ -1,0 +1,15 @@
+export PATH=/usr/local/sbin:$PATH
+
+# Homebrew
+export PATH=/opt/homebrew/bin:$PATH
+
+# Docker
+export PATH=$PATH:$HOME/.docker/bin
+
+# Rbenv
+export PATH="$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init - --no-rehash zsh)"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+source $(brew --prefix nvm)/nvm.sh

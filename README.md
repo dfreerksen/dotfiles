@@ -10,13 +10,13 @@ dotfiles. See [usage](./USAGE.md)
 
 Initial setup
 
-```
+```bash
 $ make setup
 ```
 
 ## Updating
 
-```
+```bash
 $ make update
 ```
 
@@ -26,7 +26,7 @@ $ make update
 
 Create a `~/.gitconfig.local` file
 
-```
+```bash
 $ touch ~/.gitconfig.local
 ```
 
@@ -51,7 +51,7 @@ Add the following into the file
 
 ## SSH
 
-```
+```bash
 $ ssh-keygen -t rsa
 $ ssh-add ~/.ssh/id_rsa
 ```

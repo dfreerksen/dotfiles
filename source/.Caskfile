@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 # Utilities
 cask '1password'
 cask '1password-cli'
+cask 'adguard'
 cask 'alfred'
 cask 'bartender'
 # cask 'balenaetcher'
@@ -13,31 +14,40 @@ cask 'obsidian'
 # cask 'raspberry-pi-imager'
 # cask 'sdformatter'
 cask 'the-unarchiver'
+# cask 'oracle-jdk-javadoc'
+
+# AI
+cask 'claude'
+cask 'claude-code'
 
 # Browsers
 cask 'brave-browser'
 cask 'firefox'
 cask 'google-chrome'
 
-# Developer Tools
-cask 'dbngin'
-cask 'insomnia'
-# cask 'postman'
-# cask 'ngrok'
-# cask 'jpadilla-redis'
+# Mail
+cask 'mailspring'
 
+# Developer Tools
+# cask 'another-redis-desktop-manager'
+cask 'dbngin'
+cask 'icon-composer'
+cask 'insomnia'
+cask 'postman'
+# cask 'ngrok'
 # Source control
-cask 'github'
-cask 'sourcetree'
-# cask 'tower'
+# cask 'github'
+# cask 'sourcetree'
+cask 'tower'
 
 # Entertainment
-cask 'spotify'
-cask 'vlc'
+# cask 'spotify'
+# cask 'vlc'
 
 # Cloud
 cask 'dropbox'
 cask 'sync'
+cask 'syncthing'
 cask 'syncthing-app'
 
 # Communication
@@ -48,7 +58,7 @@ cask 'slack'
 
 # Code editors
 cask 'visual-studio-code'
-cask 'macdown'
+# cask 'macdown'
 cask 'sublime-text'
 
 # Image editors
@@ -67,17 +77,36 @@ cask 'postico'
 
 # Virtualization
 cask 'chromedriver'
-cask 'docker-desktop'
+cask 'docker'
+# cask 'docker-desktop'
 # cask 'orbstack'
 
 # Privacy
 cask 'expressvpn'
+cask 'tiny-shield'
 # cask 'viscosity'
 
 # Security
 # cask 'cryptomator'
 
 # Fonts
+# cask 'font-almarai'
+# cask 'font-alumni-sans-pinstripe'
+# cask 'font-dancing-script'
+# cask 'font-graduate'
 cask 'font-hack'
 cask 'font-inconsolata'
+# cask 'font-karla'
+# cask 'font-kaushan-script'
+# cask 'font-marck-script'
+# cask 'font-nokora'
 cask 'font-open-sans'
+# cask 'font-patua-one'
+# cask 'font-playwrite-us-trad'
+# cask 'font-radley'
+cask 'font-roboto'
+# cask 'font-roboto-condensed'
+# cask 'font-roboto-slab'
+# cask 'font-teko'
+# cask 'font-vollkorn-sc'
+# cask 'font-work-sans'

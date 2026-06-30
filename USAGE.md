@@ -102,13 +102,13 @@ This is just informational. It is not overwritten
 
 Outputs the last 10 lines of [FILE], and continue to monitor it for updates. Example `tail -f ~/logs/production.log`
 
-```
+```bash
 $ tail -f [FILE]
 ````
 
 Outputs the last 50 lines of the file [FILE]. Example `tail -n 50 ~/logs/production.log`
 
-```
+```bash
 $ tail -n 50 [FILE]
 ````
 
@@ -118,24 +118,24 @@ Useful commands for [`ngrok`](https://ngrok.com/)
 
 Secure public URL for port [PORT] web server. Example `ngrok http 80`
 
-```
+```bash
 $ ngrok http [PORT]
 ```
 
 Port [PORT] available at [SUBDOMAIN].ngrok.io. Example `ngrok http -subdomain=baz 8080`
 
-```
+```bash
 $ ngrok http -subdomain=[SUBDOMAIN] [PORT]
 ```
 
 Tunnel to [HOST]:[PORT] instead of localhost. Example `ngrok http foo.dev:80`
 
-```
+```bash
 $ ngrok http [HOST]:[PORT]
 ```
 
 TLS traffic for [HOSTNAME] to port [PORT]. Example `ngrok tls -hostname=foo.com 443`
 
-```
+```bash
 $ ngrok tls -hostname=[HOSTNAME] [PORT]
 ```

@@ -23,15 +23,28 @@ mas : ## Install App Store applications
 	@echo "Initialling App Store applications"
 	brew bundle install --file=./source/.Masfile
 
+sign : ## Sign applications
+	@echo "Signing applications"
+	@./scripts/sign.sh
+
 vscode : ## Install VSCode extensions
 	@echo "Initialling VSCode extensions"
 	@./scripts/vscode.sh
 
-copy : ## Copy configuration files
-	@echo "Copying files"
-	cp -f $(PWD)/.zshrc ~/.zshrc
+gemrc : ## Install gem configuration
+	@echo "Initialling gem configuration"
 	cp -f $(PWD)/copy/.gemrc ~/.gemrc
+
+openscad : ## Install OpenSCAD libraries
+	@echo "Initialling OpenSCAD libraries"
 	cp -Rf $(PWD)/copy/Documents/OpenSCAD/libraries/ ~/Documents/OpenSCAD/libraries/
+
+zsh : ## Copy zsh files
+	@echo "Copying .zsh files"
+	cp -f $(PWD)/.zsh-aliases ~/.zsh-aliases
+	cp -f $(PWD)/.zsh-exports ~/.zsh-exports
+	cp -f $(PWD)/.zsh-functions ~/.zsh-functions
+	cp -f $(PWD)/.zshrc ~/.zshrc
 	@./scripts/source.sh
 
 setup : ## Initial setup. Meant for one time use only
@@ -40,5 +53,8 @@ setup : ## Initial setup. Meant for one time use only
 	make brew
 	make cask
 	make mas
+	make sign
 	make vscode
-	make copy
+	make gemrc
+	make openscad
+	make zsh
