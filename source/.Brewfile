@@ -15,6 +15,7 @@ brew 'readline'
 
 # CLI Tools
 brew 'circleci'
+brew 'gh'
 brew 'git'
 # brew 'kubecm'
 # brew 'kubectx'

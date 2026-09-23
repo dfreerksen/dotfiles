@@ -11,10 +11,10 @@ cask 'cleanmymac'
 cask 'iterm2'
 cask 'keepingyouawake'
 cask 'obsidian'
+# cask 'oracle-jdk-javadoc'
 # cask 'raspberry-pi-imager'
 # cask 'sdformatter'
 cask 'the-unarchiver'
-# cask 'oracle-jdk-javadoc'
 
 # AI
 cask 'claude'
@@ -30,10 +30,11 @@ cask 'mailspring'
 
 # Developer Tools
 # cask 'another-redis-desktop-manager'
+cask 'bruno'
 cask 'dbngin'
-cask 'icon-composer'
-cask 'insomnia'
-cask 'postman'
+cask 'homebrew-app'
+# cask 'icon-composer'
+# cask 'postman'
 # cask 'ngrok'
 # Source control
 # cask 'github'
