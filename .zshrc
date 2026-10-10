@@ -13,13 +13,11 @@ PROMPT='%{%F{yellow}%}%n%{%F{white}%}@%{%F{green}%}%m%{%F{white}%}:%{%F{cyan}%}%
 # Key Bindings
 ##
 
-# Move back (Opt + Left Arrow)
-bindkey '\e\e[D' backward-word
-bindkey '\e[3D' backward-word
+bindkey '^[[1;2D' backward-word   # Shift+Left
+bindkey '^[[1;2C' forward-word    # Shift+Right
 
-# Move forward (Opt + Right Arrow)
-bindkey '\e\e[C' forward-word
-bindkey '\e[3C' forward-word
+bindkey "^[[1;3D" backward-word   # Opt+Left
+bindkey "^[[1;3C" forward-word    # Opt+Right
 
 ##
 # Source

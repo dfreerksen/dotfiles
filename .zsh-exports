@@ -1,7 +1,8 @@
 export PATH=/usr/local/sbin:$PATH
 
 # Homebrew
-export PATH=/opt/homebrew/bin:$PATH
+export HOMEBREW_NO_SUDO=1
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
 
 # Docker
 export PATH=$PATH:$HOME/.docker/bin
