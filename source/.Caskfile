@@ -14,7 +14,7 @@ cask 'obsidian'
 # cask 'oracle-jdk-javadoc'
 # cask 'raspberry-pi-imager'
 # cask 'sdformatter'
-cask 'the-unarchiver'
+# cask 'the-unarchiver'
 
 # AI
 cask 'claude'
@@ -26,7 +26,7 @@ cask 'firefox'
 cask 'google-chrome'
 
 # Mail
-cask 'mailspring'
+# cask 'mailspring'
 
 # Developer Tools
 # cask 'another-redis-desktop-manager'
@@ -34,8 +34,7 @@ cask 'bruno'
 cask 'dbngin'
 cask 'homebrew-app'
 # cask 'icon-composer'
-# cask 'postman'
-# cask 'ngrok'
+
 # Source control
 # cask 'github'
 # cask 'sourcetree'
@@ -46,13 +45,13 @@ cask 'tower'
 # cask 'vlc'
 
 # Cloud
-cask 'dropbox'
+# cask 'dropbox'
 cask 'sync'
 cask 'syncthing'
 cask 'syncthing-app'
 
 # Communication
-cask 'signal'
+# cask 'signal'
 cask 'slack'
 # cask 'telegram'
 # cask 'zoom'
@@ -68,18 +67,18 @@ cask 'inkscape'
 # 3D
 cask 'bambu-studio'
 # cask 'freecad'
-cask 'openscad'
+# cask 'openscad'
 
 # Database
-cask 'db-browser-for-sqlite'
-cask 'postgres'
+# cask 'db-browser-for-sqlite'
+cask 'postgres-app'
 cask 'postico'
 # cask 'sequel-ace'
 
 # Virtualization
-cask 'chromedriver'
-cask 'docker'
-# cask 'docker-desktop'
+# cask 'chromedriver'
+# cask 'docker'
+cask 'docker-desktop'
 # cask 'orbstack'
 
 # Privacy

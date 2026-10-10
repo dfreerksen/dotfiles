@@ -5,18 +5,18 @@ brew 'elixir'
 brew 'erlang'
 brew 'go'
 brew 'node'
-brew 'python' # python@3.14
+# brew 'python' # python@3.14
 brew 'ruby'
 brew 'rust'
 
 # Dependencies for programming languages
-brew 'openssl'
-brew 'readline'
+# brew 'openssl'
+# brew 'readline'
 
 # CLI Tools
-brew 'circleci'
+# brew 'circleci'
 brew 'gh'
-brew 'git'
+# brew 'git'
 # brew 'kubecm'
 # brew 'kubectx'
 # brew 'kubernetes-cli'
@@ -24,7 +24,7 @@ brew 'git'
 brew 'wget'
 
 # Database
-brew 'postgresql' # postgresql@18
+# brew 'postgresql' # postgresql@18
 brew 'redis'
 brew 'sqlite'
 
@@ -46,9 +46,9 @@ brew 'zsh-syntax-highlighting'
 
 # Other tools
 brew 'cmake'
-brew 'dfu-util'
+# brew 'dfu-util'
 # brew 'imagemagick'
 # brew 'puma-dev'
 # brew 'solr'
-brew 'v8'
-brew 'vips'
+# brew 'v8'
+# brew 'vips'
