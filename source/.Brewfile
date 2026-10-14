@@ -15,6 +15,7 @@ brew 'rust'
 
 # CLI Tools
 # brew 'circleci'
+brew 'eza'
 brew 'gh'
 # brew 'git'
 # brew 'kubecm'

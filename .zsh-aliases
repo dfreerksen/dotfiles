@@ -11,7 +11,8 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
-# List all files colorized in long format, including hidden files
+# List all files colorized using eza
+alias ls="eza"
 alias ll="ls -laF -G"
 
 # Copy current path to clipboard
