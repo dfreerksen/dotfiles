@@ -13,7 +13,7 @@ alias .....="cd ../../../.."
 
 # List all files colorized using eza
 alias ls="eza"
-alias ll="ls -laF -G"
+alias ll="ls -laF --group-directories-first"
 
 # Copy current path to clipboard
 alias cpwd="pwd | tr -d '[:space:]' | pbcopy"
