@@ -25,7 +25,7 @@ brew 'gh'
 brew 'wget'
 
 # Database
-# brew 'postgresql' # postgresql@18
+brew 'postgresql' # postgresql@18
 brew 'redis'
 brew 'sqlite'
 
